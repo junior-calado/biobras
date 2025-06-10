@@ -184,6 +184,8 @@ function App() {
 
   const aboutSectionRef = useRef(null)
   const [aboutSectionVisible, setAboutSectionVisible] = useState(false)
+  const contactMapRef = useRef(null)
+  const [contactMapVisible, setContactMapVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -197,7 +199,7 @@ function App() {
         })
       },
       {
-        threshold: 0.3, // A seção estará visível quando 30% dela estiver na tela
+        threshold: 0.3,
       }
     )
 
@@ -208,6 +210,33 @@ function App() {
     return () => {
       if (aboutSectionRef.current) {
         observer.unobserve(aboutSectionRef.current)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setContactMapVisible(true)
+          } else {
+            setContactMapVisible(false)
+          }
+        })
+      },
+      {
+        threshold: 0.3,
+      }
+    )
+
+    if (contactMapRef.current) {
+      observer.observe(contactMapRef.current)
+    }
+
+    return () => {
+      if (contactMapRef.current) {
+        observer.unobserve(contactMapRef.current)
       }
     }
   }, [])
@@ -297,6 +326,21 @@ function App() {
       <section id="contato" className="contact">
         <h2>{currentContent.contact.title}</h2>
         <div className="contact-content">
+          <div className="contact-map-container" ref={contactMapRef}>
+            <div className={`contact-map-text ${contactMapVisible ? 'slide-up' : ''}`}>
+              <h3 dangerouslySetInnerHTML={{ __html: 'Venha nos <span class="highlight-green">visitar</span> e conhecer nossa <span class="highlight-green">tecnologia</span> de perto. Estamos prontos para receber você em nossa <span class="highlight-green">sede</span> em Maringá.' }}></h3>
+              <p>Localizados estrategicamente no coração do Paraná, oferecemos fácil acesso e infraestrutura completa para receber nossos parceiros e clientes.</p>
+            </div>
+            <div className={`contact-map ${contactMapVisible ? 'slide-right delay-1' : ''}`}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.1234567890123!2d-51.9375!3d-23.4256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzMyLjIiUyA1McKwNTYnMTUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                style={{ border: 0, width: '100%', height: '100%' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
           <form className="contact-form">
             <input type="text" placeholder={currentContent.contact.namePlaceholder} required />
             <input type="email" placeholder={currentContent.contact.emailPlaceholder} required />
