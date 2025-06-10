@@ -229,15 +229,144 @@ section h2::after {
 .about {
   background-color: var(--light-bg);
   width: 100vw; /* Ocupa 100vw */
+  overflow: hidden; /* Garante que elementos fora de vista não causem overflow */
+  padding: 6rem 0;
 }
 
 .about-content {
-  max-width: 900px;
+  max-width: 1200px; /* Aumenta a largura máxima para acomodar texto e imagens */
   margin: 0 auto;
-  padding: 0 2rem; /* Adiciona padding ao conteúdo */
-  text-align: center;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* Espaçamento entre o texto e as imagens */
+}
+
+.about-text {
+  flex: 1; /* Permite que o texto ocupe o espaço disponível */
+  min-width: 300px; /* Largura mínima para o bloco de texto */
+  text-align: left;
   font-size: 1.2rem;
   line-height: 1.8;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transição para animação */
+}
+
+.about-text h3 {
+  font-size: 3.5rem; /* Ajusta o tamanho da fonte para o título principal */
+  color: var(--secondary-color); /* Cor principal do texto */
+  line-height: 1.1; /* Espaçamento entre linhas */
+  margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+  font-weight: 600;
+}
+
+.about-text h3 .highlight-green {
+  color: var(--primary-color); /* Cor verde para as palavras destacadas */
+}
+
+.about-text p {
+  font-size: 1.2rem; /* Tamanho da fonte para o parágrafo secundário */
+  color: var(--text-color); /* Cor do texto do parágrafo */
+  margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+}
+
+.about-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about-cta-link:hover {
+  color: var(--primary-dark);
+  transform: translateX(5px);
+}
+
+.about-cta-link .arrow {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.about-text.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-images {
+  flex: 1; /* Permite que as imagens ocupem o espaço disponível */
+  min-width: 300px; /* Largura mínima para o bloco de imagens */
+  display: flex;
+  flex-direction: column; /* Organiza as imagens em coluna */
+  gap: 1.5rem;
+  position: relative; /* Para posicionar as imagens */
+}
+
+.about-image-item {
+  width: 100%;
+  height: 250px; /* Altura fixa para as imagens */
+  background-color: #ccc; /* Placeholder visual */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transição para animação */
+}
+
+.about-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animação para toda a seção (opcional, para um fade-in geral) */
+.about.fade-in {
+  opacity: 1;
+}
+
+/* Atrasos para as imagens */
+.about-image-item.delay-1 {
+  transition-delay: 0.2s;
+}
+
+.about-image-item.delay-2 {
+  transition-delay: 0.4s;
+}
+
+.about-image-item.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Empilha texto e imagens em telas menores */
+    gap: 2rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 2rem; /* Ajuste para telas menores */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Ajuste para telas menores */
+  }
+
+  .about-cta-link {
+    font-size: 0.9rem; /* Ajuste para telas menores */
+  }
 }
 
 /* Services Section */
@@ -567,8 +696,12 @@ section h2::after {
 
   /* About Section */
   .about-content {
-    font-size: 0.9rem;
-    padding: 0 0.8rem;
+    flex-direction: column; /* Empilha texto e imagens em telas menores */
+    gap: 2rem;
+  }
+
+  .about-text {
+    text-align: center;
   }
 
   /* Services Section */

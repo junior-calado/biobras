@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './App.css'
 
 const content = {
@@ -17,7 +17,9 @@ const content = {
     },
     about: {
       title: 'Sobre Nós',
-      text: 'A BioBras é uma empresa líder em soluções biotecnológicas, comprometida com a inovação e sustentabilidade. Nossa missão é desenvolver tecnologias que transformem positivamente a sociedade, sempre respeitando o meio ambiente e promovendo o desenvolvimento sustentável.',
+      mainHeading: 'Na BioBras, acreditamos que o <span class="highlight-green">futuro</span> é cultivado hoje. Somos pioneiros em biotecnologia, transformando recursos naturais em soluções <span class="highlight-green">sustentáveis</span> que impulsionam a indústria e preservam o <span class="highlight-green">meio ambiente</span>.',
+      subParagraph: 'Do campo à inovação, nossa paixão é gerar energia renovável que alimenta o progresso e constrói um amanhã mais verde para todos.',
+      ctaLinkText: 'Conheça nossos produtos',
     },
     services: {
       title: 'Nossos Serviços',
@@ -73,7 +75,9 @@ const content = {
     },
     about: {
       title: 'About Us',
-      text: 'BioBras is a leading company in biotechnology solutions, committed to innovation and sustainability. Our mission is to positively transform society through technology, always respecting the environment and promoting sustainable development.',
+      mainHeading: 'At BioBras, we believe the <span class="highlight-green">future</span> is cultivated today. We are pioneers in biotechnology, transforming natural resources into <span class="highlight-green">sustainable</span> solutions that drive industry and preserve the <span class="highlight-green">environment</span>.',
+      subParagraph: 'From the field to innovation, our passion is to generate renewable energy that fuels progress and builds a greener tomorrow for all.',
+      ctaLinkText: 'Discover our products',
     },
     services: {
       title: 'Our Services',
@@ -129,7 +133,9 @@ const content = {
     },
     about: {
       title: 'Acerca de Nosotros',
-      text: 'BioBras es una empresa líder en soluciones biotecnológicas, comprometida con la innovación y la sostenibilidad. Nuestra misión es transformar positivamente la sociedad a través de la tecnología, siempre respetando el medio ambiente y promoviendo el desarrollo sostenible.',
+      mainHeading: 'En BioBras, creemos que el <span class="highlight-green">futuro</span> se cultiva hoy. Somos pioneros en biotecnología, transformando recursos naturales en soluciones <span class="highlight-green">sostenibles</span> que impulsan la industria y preservan el <span class="highlight-green">medio ambiente</span>.',
+      subParagraph: 'Del campo a la innovación, nuestra pasión es generar energía renovable que impulsa el progreso y construye un mañana más verde para todos.',
+      ctaLinkText: 'Conozca nuestros productos',
     },
     services: {
       title: 'Nuestros Servicios',
@@ -176,6 +182,36 @@ function App() {
   const [language, setLanguage] = useState('pt')
   const currentContent = content[language]
 
+  const aboutSectionRef = useRef(null)
+  const [aboutSectionVisible, setAboutSectionVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setAboutSectionVisible(true)
+          } else {
+            setAboutSectionVisible(false)
+          }
+        })
+      },
+      {
+        threshold: 0.3, // A seção estará visível quando 30% dela estiver na tela
+      }
+    )
+
+    if (aboutSectionRef.current) {
+      observer.observe(aboutSectionRef.current)
+    }
+
+    return () => {
+      if (aboutSectionRef.current) {
+        observer.unobserve(aboutSectionRef.current)
+      }
+    }
+  }, [])
+
   return (
     <div className="app">
       {/* Header/Navbar */}
@@ -215,10 +251,26 @@ function App() {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="about">
+      <section id="sobre" className={`about ${aboutSectionVisible ? 'fade-in' : ''}`} ref={aboutSectionRef}>
         <h2>{currentContent.about.title}</h2>
         <div className="about-content">
-          <p>{currentContent.about.text}</p>
+          <div className={`about-text ${aboutSectionVisible ? 'slide-up' : ''}`}>
+            <h3 dangerouslySetInnerHTML={{ __html: currentContent.about.mainHeading }}></h3>
+            <p>{currentContent.about.subParagraph}</p>
+            <a href="#produtos" className="about-cta-link">
+              {currentContent.about.ctaLinkText} <span className="arrow">→</span>
+            </a>
+          </div>
+          <div className="about-images">
+            {/* Placeholder para a primeira imagem */}
+            <div className={`about-image-item ${aboutSectionVisible ? 'slide-up delay-1' : ''}`}>
+              {/* Sua imagem aqui */}
+            </div>
+            {/* Placeholder para a segunda imagem */}
+            <div className={`about-image-item ${aboutSectionVisible ? 'slide-up delay-2' : ''}`}>
+              {/* Sua imagem aqui */}
+            </div>
+          </div>
         </div>
       </section>
 
