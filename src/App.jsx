@@ -255,11 +255,24 @@ function App() {
             <li><a href="#contato">{currentContent.header.contact}</a></li>
           </ul>
           <div className="language-selector">
-            <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-              <option value="pt">Português</option>
-              <option value="en">English</option>
-              <option value="es">Español</option>
-            </select>
+            <button 
+              className={`language-btn ${language === 'pt' ? 'active' : ''}`}
+              onClick={() => setLanguage('pt')}
+            >
+              <img src="/flags/brazil.png" alt="Português" />
+            </button>
+            <button 
+              className={`language-btn ${language === 'en' ? 'active' : ''}`}
+              onClick={() => setLanguage('en')}
+            >
+              <img src="/flags/usa.png" alt="English" />
+            </button>
+            <button 
+              className={`language-btn ${language === 'es' ? 'active' : ''}`}
+              onClick={() => setLanguage('es')}
+            >
+              <img src="/flags/spain.png" alt="Español" />
+            </button>
           </div>
         </nav>
       </header>
