@@ -241,11 +241,11 @@ const content = {
       title: 'Nuestros Servicios',
       research: {
         title: 'Investigación y Desarrollo',
-        description: 'Desarrollo de soluciones biotecnológicas innovadoras para diversos sectores.',
+        description: 'Desarrollo de soluções biotecnológicas inovadoras para diversos setores.',
       },
       consulting: {
         title: 'Consultoría Técnica',
-        description: 'Asesoramiento especializado en proyectos biotecnológicos y sostenibles.',
+        description: 'Asesoramiento especializado en projetos biotecnológicos e sustentáveis.',
       },
       analysis: {
         title: 'Análisis de Laboratorio',
@@ -265,7 +265,7 @@ const content = {
     careers: {
       subtitle: 'TRABAJE CON NOSOTROS',
       title: 'Reinvente el futuro con nosotros.',
-      description: 'Consulte nuestras oportunidades',
+      description: 'Consulte nossas oportunidades',
       ctaButton: 'Quiero ser parte →',
     },
     footer: {
@@ -291,6 +291,21 @@ function App() {
 
   const careersSectionRef = useRef(null)
   const [careersSectionVisible, setCareersSectionVisible] = useState(false)
+
+  // Carrossel de imagens
+  const carouselImages = [
+    './images/img2.jpg',
+    './images/img1.jpg',
+    // Adicione mais imagens aqui conforme necessário
+  ]
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length)
+    }, 2000) // 2 segundos
+    return () => clearInterval(interval)
+  }, [carouselImages.length])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -409,7 +424,7 @@ function App() {
             <li><a href="#contato">{currentContent.header.contact}</a></li>
           </ul>
           <div className="language-selector">
-            <button 
+            <button
               className={`language-btn ${language === 'pt' ? 'active' : ''}`}
               onClick={() => setLanguage('pt')}
             >
@@ -418,7 +433,7 @@ function App() {
                 <a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a>
               </div>
             </button>
-            <button 
+            <button
               className={`language-btn ${language === 'en' ? 'active' : ''}`}
               onClick={() => setLanguage('en')}
             >
@@ -427,13 +442,13 @@ function App() {
                 <a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a>
               </div>
             </button>
-            <button 
+            <button
               className={`language-btn ${language === 'es' ? 'active' : ''}`}
               onClick={() => setLanguage('es')}
             >
               <img src="./images/flags/espanha.png" alt="Español" />
               <div className="image-attribution">
-                <a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a>
               </div>
             </button>
           </div>
@@ -442,11 +457,8 @@ function App() {
 
       {/* Hero Section */}
       <section id="inicio" className="hero">
-        <div className="carousel-container">
-          {/* As imagens do carrossel virão aqui */}
-          <div className="carousel-item"></div>
-          <div className="carousel-item"></div>
-          <div className="carousel-item"></div>
+        <div className="hero-bg-image">
+          <img src="./images/img2.jpg" alt="Hero" />
         </div>
         <div className="hero-content">
           <h1>{currentContent.home.title}</h1>
