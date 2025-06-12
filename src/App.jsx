@@ -226,16 +226,16 @@ const content = {
             { text: 'Código de Conducta', href: '#codigo-conducta' },
             { text: 'Código de Conducta de Socios Comerciales', href: '#codigo-socios' },
             { text: 'Cumplimiento', href: '#cumplimiento' },
-            { text: 'Programa Be8 Integridad', href: '#programa-integridad' },
+            { text: 'Programa Be8 Integridad', href: '#programa-integridade' },
           ],
         },
       },
     },
     about: {
       title: 'Acerca de Nosotros',
-      mainHeading: 'En BioBras, creemos que el <span class="highlight-green">futuro</span> se cultiva hoy. Somos pioneros en biotecnología, transformando recursos naturales en soluciones <span class="highlight-green">sostenibles</span> que impulsan la industria y preservan el <span class="highlight-green">medio ambiente</span>.',
+      mainHeading: 'En BioBras, creemos que el <span class="highlight-green">futuro</span> se cultiva hoy. Somos pioneros en biotecnología, transformando recursos naturais em soluções <span class="highlight-green">sostenibles</span> que impulsan la industria y preservan el <span class="highlight-green">medio ambiente</span>.',
       subParagraph: 'Del campo a la innovación, nuestra pasión es generar energía renovable que impulsa el progreso y construye un mañana más verde para todos.',
-      ctaLinkText: 'Conozca nuestros productos',
+      ctaLinkText: 'Conozca nossos produtos',
     },
     services: {
       title: 'Nuestros Servicios',
@@ -259,8 +259,8 @@ const content = {
       phonePlaceholder: 'Teléfono',
       messagePlaceholder: 'Su mensaje',
       button: 'Enviar Mensaje',
-      visitText: 'Venga a <span class="highlight-green">visitarnos</span> y conozca nuestra <span class="highlight-green">tecnología</span> de cerca. Estamos listos para recibirle en nuestra <span class="highlight-green">sede</span> en Maringá.',
-      locationText: 'Ubicados estratégicamente en el corazón de Paraná, ofrecemos fácil acceso e infraestructura completa para recibir a nuestros socios y clientes.'
+      visitText: 'Venga a <span class="highlight-green">visitarnos</span> e conozca nossa <span class="highlight-green">tecnología</span> de cerca. Estamos listos para recibirle en nuestra <span class="highlight-green">sede</span> en Maringá.',
+      locationText: 'Ubicados estratégicamente en el corazón de Paraná, ofrecemos fácil acceso e infraestrutura completa para recibir a nuestros socios y clientes.'
     },
     careers: {
       subtitle: 'TRABAJE CON NOSOTROS',
@@ -546,7 +546,7 @@ function App() {
       <section id="carreiras" className="careers" ref={careersSectionRef}>
         <div className="careers-content">
           <div className={`careers-image ${careersSectionVisible ? 'slide-in-left' : ''}`}>
-            <img src="/images/RH-Industrial.jpg" alt="Trabalhe Conosco" />
+            <img src="./images/RH-Industrial.jpg" alt="Trabalhe Conosco" />
           </div>
           <div className={`careers-text-container ${careersSectionVisible ? 'slide-in-right' : ''}`}>
             <div className="careers-text">
