@@ -830,6 +830,7 @@ section h2::after {
   transition: all 0.3s ease;
   font-size: 1rem;
   background-color: #f8f9fa;
+  color: #000; /* Garante texto preto nos campos */
 }
 
 .contact-form input:focus,
@@ -841,6 +842,7 @@ section h2::after {
 }
 
 .contact-form textarea {
+  color: #000;
   min-height: 150px;
   resize: vertical;
 }
