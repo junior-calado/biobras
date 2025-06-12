@@ -14,6 +14,38 @@ const content = {
       services: 'Serviços',
       contact: 'Contato',
       careers: 'Carreiras',
+      aboutDropdown: {
+        quemSomos: {
+          title: 'Quem Somos',
+          links: [
+            { text: 'Nosso Propósito', href: '#proposito' },
+            { text: 'Nossa História', href: '#historia' },
+            { text: 'Nossos Reconhecimentos', href: '#reconhecimentos' },
+            { text: 'Vídeo Institucional', href: '#video-institucional' },
+            { text: 'Publicações', href: '#publicacoes' },
+            { text: 'Nossas Notícias', href: '#noticias' },
+          ],
+        },
+        ondeEstamos: {
+          title: 'Onde Estamos',
+          links: [
+            { text: 'Mapa', href: '#mapa' },
+            { text: 'Unidades Industriais', href: '#unidades-industriais' },
+            { text: 'Escritórios de negócios', href: '#escritorios' },
+            { text: 'Omega Green', href: '#omega-green' },
+          ],
+        },
+        etica: {
+          title: 'Ética',
+          links: [
+            { text: 'Canal de Denúncias', href: '#canal-denuncias' },
+            { text: 'Código de Conduta', href: '#codigo-conduta' },
+            { text: 'Código de Conduta de Parceiros Comerciais', href: '#codigo-parceiros' },
+            { text: 'Compliance', href: '#compliance' },
+            { text: 'Programa Be8 Integridade', href: '#programa-integridade' },
+          ],
+        },
+      },
     },
     about: {
       title: 'Sobre Nós',
@@ -43,6 +75,8 @@ const content = {
       phonePlaceholder: 'Telefone',
       messagePlaceholder: 'Sua mensagem',
       button: 'Enviar Mensagem',
+      visitText: 'Venha nos <span class="highlight-green">visitar</span> e conhecer nossa <span class="highlight-green">tecnologia</span> de perto. Estamos prontos para receber você em nossa <span class="highlight-green">sede</span> em Maringá.',
+      locationText: 'Localizados estrategicamente no coração do Paraná, oferecemos fácil acesso e infraestrutura completa para receber nossos parceiros e clientes.'
     },
     careers: {
       subtitle: 'TRABALHE CONOSCO',
@@ -72,6 +106,38 @@ const content = {
       services: 'Services',
       contact: 'Contact',
       careers: 'Careers',
+      aboutDropdown: {
+        quemSomos: {
+          title: 'Who We Are',
+          links: [
+            { text: 'Our Purpose', href: '#purpose' },
+            { text: 'Our History', href: '#history' },
+            { text: 'Our Recognitions', href: '#recognitions' },
+            { text: 'Institutional Video', href: '#institutional-video' },
+            { text: 'Publications', href: '#publications' },
+            { text: 'Our News', href: '#news' },
+          ],
+        },
+        ondeEstamos: {
+          title: 'Where We Are',
+          links: [
+            { text: 'Map', href: '#map' },
+            { text: 'Industrial Units', href: '#industrial-units' },
+            { text: 'Business Offices', href: '#business-offices' },
+            { text: 'Omega Green', href: '#omega-green' },
+          ],
+        },
+        etica: {
+          title: 'Ethics',
+          links: [
+            { text: 'Whistleblower Channel', href: '#whistleblower-channel' },
+            { text: 'Code of Conduct', href: '#code-of-conduct' },
+            { text: 'Commercial Partners Code of Conduct', href: '#partners-code' },
+            { text: 'Compliance', href: '#compliance' },
+            { text: 'Be8 Integrity Program', href: '#integrity-program' },
+          ],
+        },
+      },
     },
     about: {
       title: 'About Us',
@@ -101,6 +167,8 @@ const content = {
       phonePlaceholder: 'Phone',
       messagePlaceholder: 'Your message',
       button: 'Send Message',
+      visitText: 'Come <span class="highlight-green">visit</span> us and see our <span class="highlight-green">technology</span> up close. We are ready to welcome you to our <span class="highlight-green">headquarters</span> in Maringá.',
+      locationText: 'Strategically located in the heart of Paraná, we offer easy access and complete infrastructure to receive our partners and clients.'
     },
     careers: {
       subtitle: 'WORK WITH US',
@@ -130,6 +198,38 @@ const content = {
       services: 'Servicios',
       contact: 'Contacto',
       careers: 'Carreras',
+      aboutDropdown: {
+        quemSomos: {
+          title: 'Quiénes Somos',
+          links: [
+            { text: 'Nuestro Propósito', href: '#proposito' },
+            { text: 'Nuestra Historia', href: '#historia' },
+            { text: 'Nuestros Reconocimientos', href: '#reconocimientos' },
+            { text: 'Video Institucional', href: '#video-institucional' },
+            { text: 'Publicaciones', href: '#publicaciones' },
+            { text: 'Nuestras Noticias', href: '#noticias' },
+          ],
+        },
+        ondeEstamos: {
+          title: 'Dónde Estamos',
+          links: [
+            { text: 'Mapa', href: '#mapa' },
+            { text: 'Unidades Industriales', href: '#unidades-industriales' },
+            { text: 'Oficinas de Negocios', href: '#oficinas' },
+            { text: 'Omega Green', href: '#omega-green' },
+          ],
+        },
+        etica: {
+          title: 'Ética',
+          links: [
+            { text: 'Canal de Denuncias', href: '#canal-denuncias' },
+            { text: 'Código de Conducta', href: '#codigo-conducta' },
+            { text: 'Código de Conducta de Socios Comerciales', href: '#codigo-socios' },
+            { text: 'Cumplimiento', href: '#cumplimiento' },
+            { text: 'Programa Be8 Integridad', href: '#programa-integridad' },
+          ],
+        },
+      },
     },
     about: {
       title: 'Acerca de Nosotros',
@@ -159,6 +259,8 @@ const content = {
       phonePlaceholder: 'Teléfono',
       messagePlaceholder: 'Su mensaje',
       button: 'Enviar Mensaje',
+      visitText: 'Venga a <span class="highlight-green">visitarnos</span> y conozca nuestra <span class="highlight-green">tecnología</span> de cerca. Estamos listos para recibirle en nuestra <span class="highlight-green">sede</span> en Maringá.',
+      locationText: 'Ubicados estratégicamente en el corazón de Paraná, ofrecemos fácil acceso e infraestructura completa para recibir a nuestros socios y clientes.'
     },
     careers: {
       subtitle: 'TRABAJE CON NOSOTROS',
@@ -186,6 +288,9 @@ function App() {
   const [aboutSectionVisible, setAboutSectionVisible] = useState(false)
   const contactMapRef = useRef(null)
   const [contactMapVisible, setContactMapVisible] = useState(false)
+
+  const careersSectionRef = useRef(null)
+  const [careersSectionVisible, setCareersSectionVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -241,6 +346,33 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCareersSectionVisible(true)
+          } else {
+            setCareersSectionVisible(false)
+          }
+        })
+      },
+      {
+        threshold: 0.3,
+      }
+    )
+
+    if (careersSectionRef.current) {
+      observer.observe(careersSectionRef.current)
+    }
+
+    return () => {
+      if (careersSectionRef.current) {
+        observer.unobserve(careersSectionRef.current)
+      }
+    }
+  }, [])
+
   return (
     <div className="app">
       {/* Header/Navbar */}
@@ -249,7 +381,29 @@ function App() {
           <div className="logo">BioBras</div>
           <ul className="nav-links">
             <li><a href="#inicio">{currentContent.header.home}</a></li>
-            <li><a href="#sobre">{currentContent.header.about}</a></li>
+            <li className="dropdown">
+              <a href="#sobre" className="dropbtn">{currentContent.header.about}</a>
+              <div className="dropdown-content">
+                <div className="dropdown-column">
+                  <h4>{currentContent.header.aboutDropdown.quemSomos.title}</h4>
+                  {currentContent.header.aboutDropdown.quemSomos.links.map((link, index) => (
+                    <a key={index} href={link.href}>{link.text}</a>
+                  ))}
+                </div>
+                <div className="dropdown-column">
+                  <h4>{currentContent.header.aboutDropdown.ondeEstamos.title}</h4>
+                  {currentContent.header.aboutDropdown.ondeEstamos.links.map((link, index) => (
+                    <a key={index} href={link.href}>{link.text}</a>
+                  ))}
+                </div>
+                <div className="dropdown-column">
+                  <h4>{currentContent.header.aboutDropdown.etica.title}</h4>
+                  {currentContent.header.aboutDropdown.etica.links.map((link, index) => (
+                    <a key={index} href={link.href}>{link.text}</a>
+                  ))}
+                </div>
+              </div>
+            </li>
             <li><a href="#servicos">{currentContent.header.services}</a></li>
             <li><a href="#carreiras">{currentContent.header.careers}</a></li>
             <li><a href="#contato">{currentContent.header.contact}</a></li>
@@ -259,19 +413,28 @@ function App() {
               className={`language-btn ${language === 'pt' ? 'active' : ''}`}
               onClick={() => setLanguage('pt')}
             >
-              <img src="/flags/brazil.png" alt="Português" />
+              <img src="./images/flags/brasil.png" alt="Português" />
+              <div className="image-attribution">
+                <a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a>
+              </div>
             </button>
             <button 
               className={`language-btn ${language === 'en' ? 'active' : ''}`}
               onClick={() => setLanguage('en')}
             >
-              <img src="/flags/usa.png" alt="English" />
+              <img src="./images/flags/estados-unidos.png" alt="English" />
+              <div className="image-attribution">
+                <a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a>
+              </div>
             </button>
             <button 
               className={`language-btn ${language === 'es' ? 'active' : ''}`}
               onClick={() => setLanguage('es')}
             >
-              <img src="/flags/spain.png" alt="Español" />
+              <img src="./images/flags/espanha.png" alt="Español" />
+              <div className="image-attribution">
+                <a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a>
+              </div>
             </button>
           </div>
         </nav>
@@ -304,14 +467,29 @@ function App() {
             </a>
           </div>
           <div className="about-images">
-            {/* Placeholder para a primeira imagem */}
+            <div className={`about-image-item ${aboutSectionVisible ? 'slide-up' : ''}`}>
+              <img src="/images/about-main.jpg" alt="Nossa Tecnologia" />
+            </div>
             <div className={`about-image-item ${aboutSectionVisible ? 'slide-up delay-1' : ''}`}>
-              {/* Sua imagem aqui */}
+              <img src="/images/about-lab.jpg" alt="Laboratório" />
             </div>
-            {/* Placeholder para a segunda imagem */}
             <div className={`about-image-item ${aboutSectionVisible ? 'slide-up delay-2' : ''}`}>
-              {/* Sua imagem aqui */}
+              <img src="/images/about-field.jpg" alt="Campo" />
             </div>
+          </div>
+        </div>
+        <div className={`about-stats ${aboutSectionVisible ? 'slide-up' : ''}`}>
+          <div className="stat-item">
+            <div className="stat-number">15+</div>
+            <div className="stat-label">Anos de Experiência</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">500+</div>
+            <div className="stat-label">Projetos Concluídos</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">50+</div>
+            <div className="stat-label">Especialistas</div>
           </div>
         </div>
       </section>
@@ -341,8 +519,8 @@ function App() {
         <div className="contact-content">
           <div className="contact-map-container" ref={contactMapRef}>
             <div className={`contact-map-text ${contactMapVisible ? 'slide-up' : ''}`}>
-              <h3 dangerouslySetInnerHTML={{ __html: 'Venha nos <span class="highlight-green">visitar</span> e conhecer nossa <span class="highlight-green">tecnologia</span> de perto. Estamos prontos para receber você em nossa <span class="highlight-green">sede</span> em Maringá.' }}></h3>
-              <p>Localizados estrategicamente no coração do Paraná, oferecemos fácil acesso e infraestrutura completa para receber nossos parceiros e clientes.</p>
+              <h3 dangerouslySetInnerHTML={{ __html: currentContent.contact.visitText }}></h3>
+              <p>{currentContent.contact.locationText}</p>
             </div>
             <div className={`contact-map ${contactMapVisible ? 'slide-right delay-1' : ''}`}>
               <iframe
@@ -365,17 +543,18 @@ function App() {
       </section>
 
       {/* Nova Seção: Trabalhe Conosco */}
-      <section id="carreiras" className="careers">
+      <section id="carreiras" className="careers" ref={careersSectionRef}>
         <div className="careers-content">
-          <div className="careers-image">
-            {/* Você pode adicionar sua imagem aqui depois */}
-            <img src="/images/trabalhe-conosco-placeholder.jpg" alt="Trabalhe Conosco" />
+          <div className={`careers-image ${careersSectionVisible ? 'slide-in-left' : ''}`}>
+            <img src="/images/RH-Industrial.jpg" alt="Trabalhe Conosco" />
           </div>
-          <div className="careers-text">
-            <p className="section-subtitle">{currentContent.careers.subtitle}</p>
-            <h2>{currentContent.careers.title}</h2>
-            <p>{currentContent.careers.description}</p>
-            <button className="cta-button">{currentContent.careers.ctaButton}</button>
+          <div className={`careers-text-container ${careersSectionVisible ? 'slide-in-right' : ''}`}>
+            <div className="careers-text">
+              <p className="section-subtitle">{currentContent.careers.subtitle}</p>
+              <h2>{currentContent.careers.title}</h2>
+              <p>{currentContent.careers.description}</p>
+              <button className="cta-button">{currentContent.careers.ctaButton}</button>
+            </div>
           </div>
         </div>
       </section>
