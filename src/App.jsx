@@ -491,15 +491,15 @@ function App() {
           </div>
         </div>
         <div className={`about-stats ${aboutSectionVisible ? 'slide-up' : ''}`}>
-          <div className="stat-item">
+          <div className="service-card">
             <div className="stat-number">15+</div>
             <div className="stat-label">Anos de Experiência</div>
           </div>
-          <div className="stat-item">
+          <div className="service-card">
             <div className="stat-number">500+</div>
             <div className="stat-label">Projetos Concluídos</div>
           </div>
-          <div className="stat-item">
+          <div className="service-card">
             <div className="stat-number">50+</div>
             <div className="stat-label">Especialistas</div>
           </div>
