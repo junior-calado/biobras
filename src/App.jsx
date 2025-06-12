@@ -249,7 +249,7 @@ const content = {
       },
       analysis: {
         title: 'Análisis de Laboratorio',
-        description: 'Servicios de análisis especializados con tecnología de vanguardia.',
+        description: 'Servicios de análisis especializados com tecnologia de vanguardia.',
       },
     },
     contact: {
@@ -563,7 +563,7 @@ function App() {
           <div className={`careers-text-container ${careersSectionVisible ? 'slide-in-right' : ''}`}>
             <div className="careers-text">
               <p className="section-subtitle">{currentContent.careers.subtitle}</p>
-              <h2>{currentContent.careers.title}</h2>
+              <h3 className="careers-title-alt">{currentContent.careers.title}</h3>
               <p>{currentContent.careers.description}</p>
               <button className="cta-button">{currentContent.careers.ctaButton}</button>
             </div>

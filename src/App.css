@@ -960,7 +960,7 @@ section h2::after {
 
 .careers-content {
   display: flex;
-  flex-direction: row; /* Alinha imagem e texto lado a lado */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 1200px;
@@ -1003,16 +1003,19 @@ section h2::after {
 
 .careers-text-container {
   flex: 1;
-  max-width: 600px; /* Limita a largura do texto */
+  max-width: 600px;
   text-align: left;
-  transform: translateX(50px); /* Animação inicial */
-  opacity: 0;
-  transition: transform 0.8s ease-out 0.2s, opacity 0.8s ease-out 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
-.careers-text-container.slide-in-right {
-  transform: translateX(0);
-  opacity: 1;
+.careers-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .careers-text .section-subtitle {
@@ -1025,70 +1028,67 @@ section h2::after {
 }
 
 .careers-text h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: var(--text-color);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.2;
+  text-align: left;
+  position: relative;
+  padding-left: 22px;
+}
+
+.careers-text h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 70%;
+  width: 6px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  box-shadow: 0 2px 8px rgba(90,164,59,0.10);
+  display: block;
 }
 
 .careers-text p {
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 1.7;
+  text-align: left;
 }
 
 .careers-text .cta-button {
-  /* Reutiliza estilos do cta-button globalmente definidos */
+  align-self: flex-start;
   padding: 15px 40px;
   font-size: 1.1rem;
 }
 
-/* Responsividade para a seção Carreiras */
+/* Novo estilo para o h3 alternativo do título da seção Trabalhe Conosco */
+.careers-title-alt {
+  font-size: 2.3rem;
+  color: var(--primary-dark);
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, var(--primary-color) 10%, var(--secondary-color) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-left: 0;
+  position: relative;
+}
+
 @media (max-width: 1024px) {
-  .careers-content {
-    flex-direction: column; /* Empilha a imagem e o texto em telas menores */
-    padding: 30px;
-    gap: 40px;
-  }
-
-  .careers-image,
-  .careers-text-container {
-    max-width: 100%; /* Ocupa a largura total */
-    transform: none; /* Remove transformações iniciais */
-    opacity: 1; /* Garante que estejam visíveis */
-  }
-
-  .careers-text {
-    text-align: center;
-  }
-
-  .careers-text h2 {
-    font-size: 2.5rem;
+  .careers-title-alt {
+    font-size: 1.7rem;
   }
 }
 
 @media (max-width: 768px) {
-  .careers {
-    padding: 60px 15px;
-  }
-
-  .careers-content {
-    padding: 20px;
-    gap: 30px;
-  }
-
-  .careers-text h2 {
-    font-size: 2rem;
-  }
-
-  .careers-text p {
-    font-size: 1rem;
-  }
-
-  .careers-text .cta-button {
-    padding: 12px 30px;
-    font-size: 1rem;
+  .careers-title-alt {
+    font-size: 1.2rem;
   }
 }
 
@@ -1312,44 +1312,33 @@ section h2::after {
     padding: 0.7rem 1.2rem;
     font-size: 0.85rem;
   }
+}
 
-  /* Footer */
-  .footer {
-    padding: 2rem 0; /* Reduz o padding vertical do footer */
+/* Novo estilo para o h3 alternativo do título da seção Trabalhe Conosco */
+.careers-title-alt {
+  font-size: 2.3rem;
+  color: var(--primary-dark);
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, var(--primary-color) 10%, var(--secondary-color) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-left: 0;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .careers-title-alt {
+    font-size: 1.7rem;
   }
+}
 
-  .footer-content {
-    padding: 1.5rem 0.8rem;
-    gap: 0.6rem;
-  }
-
-  .footer-section {
-    margin-bottom: 0.8rem;
-  }
-
-  .footer-section h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .footer-section p {
-    font-size: 0.85rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .social-links {
-    gap: 0.8rem;
-  }
-
-  .social-links a {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.85rem;
-  }
-
-  .footer-bottom {
-    margin-top: 1rem;
-    padding-top: 0.8rem;
-    font-size: 0.75rem;
+@media (max-width: 768px) {
+  .careers-title-alt {
+    font-size: 1.2rem;
   }
 }
 
