@@ -32,7 +32,6 @@ const content = {
             { text: 'Mapa', href: '#mapa' },
             { text: 'Unidades Industriais', href: '#unidades-industriais' },
             { text: 'Escritórios de negócios', href: '#escritorios' },
-            { text: 'Omega Green', href: '#omega-green' },
           ],
         },
         etica: {
@@ -42,7 +41,6 @@ const content = {
             { text: 'Código de Conduta', href: '#codigo-conduta' },
             { text: 'Código de Conduta de Parceiros Comerciais', href: '#codigo-parceiros' },
             { text: 'Compliance', href: '#compliance' },
-            { text: 'Programa Be8 Integridade', href: '#programa-integridade' },
           ],
         },
       },
@@ -124,7 +122,6 @@ const content = {
             { text: 'Map', href: '#map' },
             { text: 'Industrial Units', href: '#industrial-units' },
             { text: 'Business Offices', href: '#business-offices' },
-            { text: 'Omega Green', href: '#omega-green' },
           ],
         },
         etica: {
@@ -134,7 +131,6 @@ const content = {
             { text: 'Code of Conduct', href: '#code-of-conduct' },
             { text: 'Commercial Partners Code of Conduct', href: '#partners-code' },
             { text: 'Compliance', href: '#compliance' },
-            { text: 'Be8 Integrity Program', href: '#integrity-program' },
           ],
         },
       },
@@ -216,7 +212,6 @@ const content = {
             { text: 'Mapa', href: '#mapa' },
             { text: 'Unidades Industriales', href: '#unidades-industriales' },
             { text: 'Oficinas de Negocios', href: '#oficinas' },
-            { text: 'Omega Green', href: '#omega-green' },
           ],
         },
         etica: {
@@ -226,7 +221,6 @@ const content = {
             { text: 'Código de Conducta', href: '#codigo-conducta' },
             { text: 'Código de Conducta de Socios Comerciales', href: '#codigo-socios' },
             { text: 'Cumplimiento', href: '#cumplimiento' },
-            { text: 'Programa Be8 Integridad', href: '#programa-integridade' },
           ],
         },
       },
