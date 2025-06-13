@@ -1426,3 +1426,30 @@ section h2::after {
     transform: translateX(-50px);
   }
 }
+
+/* Estilos para os links de scroll */
+.nav-link,
+.dropdown-link,
+.footer-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover,
+.dropdown-link:hover,
+.footer-link:hover {
+  color: #4CAF50;
+}
+
+/* Ajuste para o dropdown */
+.dropdown-link {
+  display: block;
+  padding: 8px 16px;
+}
+
+/* Ajuste para o footer */
+.footer-link {
+  display: block;
+  margin-bottom: 8px;
+}

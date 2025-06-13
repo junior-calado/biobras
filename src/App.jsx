@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { Link as ScrollLink } from 'react-scroll'
 import './App.css'
 
 const content = {
@@ -294,6 +295,15 @@ function App() {
   ]
   const [currentSlide, setCurrentSlide] = useState(0)
 
+  // Função para scroll suave
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault()
+    const section = document.querySelector(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselImages.length)
@@ -389,33 +399,116 @@ function App() {
         <nav className="nav">
           <div className="logo">BioBras</div>
           <ul className="nav-links">
-            <li><a href="#inicio">{currentContent.header.home}</a></li>
+            <li>
+              <ScrollLink
+                to="inicio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                {currentContent.header.home}
+              </ScrollLink>
+            </li>
             <li className="dropdown">
-              <a href="#sobre" className="dropbtn">{currentContent.header.about}</a>
+              <ScrollLink
+                to="sobre"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="dropbtn"
+              >
+                {currentContent.header.about}
+              </ScrollLink>
               <div className="dropdown-content">
                 <div className="dropdown-column">
                   <h4>{currentContent.header.aboutDropdown.quemSomos.title}</h4>
                   {currentContent.header.aboutDropdown.quemSomos.links.map((link, index) => (
-                    <a key={index} href={link.href}>{link.text}</a>
+                    <ScrollLink
+                      key={index}
+                      to={link.href.replace('#', '')}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="dropdown-link"
+                    >
+                      {link.text}
+                    </ScrollLink>
                   ))}
                 </div>
                 <div className="dropdown-column">
                   <h4>{currentContent.header.aboutDropdown.ondeEstamos.title}</h4>
                   {currentContent.header.aboutDropdown.ondeEstamos.links.map((link, index) => (
-                    <a key={index} href={link.href}>{link.text}</a>
+                    <ScrollLink
+                      key={index}
+                      to={link.href.replace('#', '')}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="dropdown-link"
+                    >
+                      {link.text}
+                    </ScrollLink>
                   ))}
                 </div>
                 <div className="dropdown-column">
                   <h4>{currentContent.header.aboutDropdown.etica.title}</h4>
                   {currentContent.header.aboutDropdown.etica.links.map((link, index) => (
-                    <a key={index} href={link.href}>{link.text}</a>
+                    <ScrollLink
+                      key={index}
+                      to={link.href.replace('#', '')}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="dropdown-link"
+                    >
+                      {link.text}
+                    </ScrollLink>
                   ))}
                 </div>
               </div>
             </li>
-            <li><a href="#servicos">{currentContent.header.services}</a></li>
-            <li><a href="#carreiras">{currentContent.header.careers}</a></li>
-            <li><a href="#contato">{currentContent.header.contact}</a></li>
+            <li>
+              <ScrollLink
+                to="servicos"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                {currentContent.header.services}
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="carreiras"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                {currentContent.header.careers}
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="contato"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                {currentContent.header.contact}
+              </ScrollLink>
+            </li>
           </ul>
           <div className="language-selector">
             <button
@@ -581,11 +674,66 @@ function App() {
           <div className="footer-section quick-links">
             <h3>{currentContent.footer.quickLinks}</h3>
             <ul>
-              <li><a href="#inicio">{currentContent.header.home}</a></li>
-              <li><a href="#sobre">{currentContent.header.about}</a></li>
-              <li><a href="#servicos">{currentContent.header.services}</a></li>
-              <li><a href="#carreiras">{currentContent.header.careers}</a></li>
-              <li><a href="#contato">{currentContent.header.contact}</a></li>
+              <li>
+                <ScrollLink
+                  to="inicio"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="footer-link"
+                >
+                  {currentContent.header.home}
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="sobre"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="footer-link"
+                >
+                  {currentContent.header.about}
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="servicos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="footer-link"
+                >
+                  {currentContent.header.services}
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="carreiras"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="footer-link"
+                >
+                  {currentContent.header.careers}
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="contato"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="footer-link"
+                >
+                  {currentContent.header.contact}
+                </ScrollLink>
+              </li>
             </ul>
           </div>
 
