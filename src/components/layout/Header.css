@@ -1,0 +1,85 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link, .dropbtn {
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .dropbtn:hover {
+  color: #4CAF50;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.dropdown-column {
+  min-width: 200px;
+}
+
+.dropdown-column h4 {
+  margin: 0 0 1rem 0;
+  color: #4CAF50;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  color: #4CAF50;
+} 

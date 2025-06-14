@@ -1,0 +1,41 @@
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.language-btn:hover {
+  transform: scale(1.1);
+}
+
+.language-btn.active {
+  border: 2px solid #4CAF50;
+}
+
+.language-btn img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.image-attribution {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.image-attribution a {
+  color: #666;
+  text-decoration: none;
+} 
