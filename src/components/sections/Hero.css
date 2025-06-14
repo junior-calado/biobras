@@ -73,8 +73,11 @@
 
 .arrow {
   opacity: 0;
-  animation: arrowAnimation 2s infinite;
-  font-size: 2rem !important;
+  animation: arrowAnimation 2s infinite, colorTransition 3s infinite;
+  font-size: 4rem !important;
+  color: #4CAF50;
+  filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
 }
 
 .arrow:nth-child(2) {
@@ -106,5 +109,18 @@
   }
   50% {
     opacity: 1;
+  }
+}
+
+@keyframes colorTransition {
+  0%, 100% {
+    color: #4CAF50;
+    filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+  }
+  50% {
+    color: #FFD700;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
   }
 } 

@@ -48,6 +48,8 @@ export const translations = {
       Somos pioneiros em biotecnologia, <br />
       transformando recursos naturais em soluções <span class="highlight-green">sustentáveis</span> que impulsionam a indústria e preservam o <span class="highlight-green">meio ambiente.</span>`,
       description: 'Do campo à inovação, nossa paixão é gerar energia renovável que alimenta o progresso e constrói um amanhã mais verde para todos.',
+      shortMainText: 'Na BioBras, cultivamos o <span class="highlight-green">futuro</span> com soluções <span class="highlight-green">sustentáveis</span> em biotecnologia para um <span class="highlight-green">meio ambiente</span> melhor.',
+      shortDescription: 'Energia renovável, inovação e compromisso com um amanhã mais verde.',
       ctaButton: 'Conheça nossos produtos',
     },
     services: {
@@ -155,6 +157,8 @@ export const translations = {
       We are pioneers in biotechnology, <br />
       transforming natural resources into <span class="highlight-green">sustainable</span> solutions that drive industry and preserve the <span class="highlight-green">environment.</span>`,
       description: 'From the field to innovation, our passion is to generate renewable energy that fuels progress and builds a greener tomorrow for all.',
+      shortMainText: 'At BioBras, we cultivate the <span class="highlight-green">future</span> with <span class="highlight-green">sustainable</span> biotechnology solutions for a better <span class="highlight-green">environment</span>.',
+      shortDescription: 'Renewable energy, innovation, and commitment to a greener tomorrow.',
       ctaButton: 'Discover our products',
     },
     services: {
@@ -261,8 +265,10 @@ export const translations = {
       mainText: `En BioBras, creemos que el <span class="highlight-green">futuro</span> se cultiva hoy. <br />
       Somos pioneros en biotecnología, <br />
       transformando recursos naturales en soluciones <span class="highlight-green">sostenibles</span> que impulsan la industria y preservan el <span class="highlight-green">medio ambiente.</span>`,
-      description: 'Del campo a la innovación, nuestra pasión es generar energía renovable que alimenta el progreso y construye un mañana más verde para todos.',
-      ctaButton: 'Conoce nuestros productos',
+      description: 'Del campo a la innovación, nuestra pasión es generar energía renovable que impulsa el progreso y construye un mañana más verde para todos.',
+      shortMainText: 'En BioBras, cultivamos el <span class="highlight-green">futuro</span> con soluciones <span class="highlight-green">sostenibles</span> en biotecnología para un <span class="highlight-green">medio ambiente</span> mejor.',
+      shortDescription: 'Energía renovable, innovación y compromiso con un mañana más verde.',
+      ctaButton: 'Descubre nuestros productos',
     },
     services: {
       title: 'Nuestros Servicios',

@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="hero-bg-image">
-        <img src="./images/img2.jpg" alt="Hero" />
+        <img src={`${import.meta.env.BASE_URL}images/img2.jpg`} alt="Hero" />
       </div>
       <Container maxWidth="lg" className="hero-content">
         <Typography variant="h1" component="h1" className="hero-title">

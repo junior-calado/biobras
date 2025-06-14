@@ -17,7 +17,8 @@
 }
 
 .language-btn.active {
-  border: 2px solid #4CAF50;
+  border: 3px solid #8BC34A;
+  box-shadow: 0 0 15px rgba(139, 195, 74, 0.4);
 }
 
 .language-btn img {
