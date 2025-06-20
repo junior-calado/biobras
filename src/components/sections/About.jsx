@@ -24,15 +24,15 @@ export default function About() {
         </div>
         <div className="about-images">
           <div className={`about-image-item ${isVisible ? 'slide-up' : ''}`}>
-            <img src="/images/About/img.jpg" alt="Nossa Tecnologia" />
+            <img src={`${import.meta.env.BASE_URL}images/About/img.jpg`} alt="Nossa Tecnologia" />
             <a href="https://br.freepik.com/fotos-gratis/homem-de-angulo-baixo-no-posto-de-gasolina_60412382.htm">Imagem de freepik</a>
           </div>
           <div className={`about-image-item ${isVisible ? 'slide-up delay-1' : ''}`}>
-            <img src="/images/About/img1.jpg" alt="Laboratório" />
+            <img src={`${import.meta.env.BASE_URL}images/About/img1.jpg`} alt="Laboratório" />
             <a href="https://br.freepik.com/fotos-gratis/vista-frontal-de-uma-cientista-segurando-um-tubo-de-ensaio_11706631.htm" className="image-credit">Imagem de freepik</a>
           </div>
           <div className={`about-image-item ${isVisible ? 'slide-up delay-2' : ''}`}>
-            <img src="/images/About/img2.jpg" alt="Campo" />
+            <img src={`${import.meta.env.BASE_URL}images/About/img2.jpg`} alt="Campo" />
             <a href="https://br.freepik.com/vetores-gratis/ilustracao-de-biocombustivel-de-design-plano_26252312.htm">Imagem de freepik</a>
           </div>
         </div>
