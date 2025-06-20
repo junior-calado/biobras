@@ -13,11 +13,11 @@ export default function Contact() {
         <div className="contact-map-container" ref={ref}>
           <div className={`contact-map-text ${isVisible ? 'slide-up' : ''}`}>
             <h3>{currentContent.contact.subtitle}</h3>
-            <p>{currentContent.contact.info.address}</p>
+            <p dangerouslySetInnerHTML={{ __html: currentContent.contact.info.address }} />
           </div>
           <div className={`contact-map ${isVisible ? 'slide-right delay-1' : ''}`}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.1234567890123!2d-51.9375!3d-23.4256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzMyLjIiUyA1McKwNTYnMTUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.282964479836!2d-52.2370354!3d-23.1744343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9492c5ba33892359:0xf86fb732135729c6!2sAgroquimica%20Brasinha%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1718030000000!5m2!1spt-BR!2sbr"
               style={{ border: 0, width: '100%', height: '100%' }}
               allowFullScreen=""
               loading="lazy"

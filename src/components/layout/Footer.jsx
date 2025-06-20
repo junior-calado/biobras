@@ -12,9 +12,7 @@ export default function Footer() {
           <h3>BioBras</h3>
           <p>{currentContent.footer.aboutText}</p>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/biobras-biodiesel-sa/" target="_blank" rel="noopener noreferrer" className="linkedin-btn">LinkedIn</a>
           </div>
         </div>
 
@@ -86,9 +84,9 @@ export default function Footer() {
 
         <div className="footer-section contact-info">
           <h3>{currentContent.footer.contactInfo}</h3>
-          <p>Email: {currentContent.contact.info.email}</p>
-          <p>Telefone: {currentContent.contact.info.phone}</p>
-          <p>Endereço: {currentContent.contact.info.address}</p>
+          <p>{currentContent.footer.email}</p>
+          <p>{currentContent.footer.phone}</p>
+          <p>{currentContent.footer.address}</p>
         </div>
       </div>
       <div className="footer-bottom">

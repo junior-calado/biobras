@@ -1453,3 +1453,25 @@ section h2::after {
   display: block;
   margin-bottom: 8px;
 }
+
+@keyframes arrowSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+.arrow.slide-right {
+  opacity: 0;
+  animation: arrowSlideRight 1.2s cubic-bezier(0.4,0,0.2,1) infinite;
+  display: inline-flex;
+  align-items: center;
+}

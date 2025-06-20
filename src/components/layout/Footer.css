@@ -72,6 +72,33 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 48px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0 24px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  margin-top: 18px;
+  letter-spacing: 0.5px;
+  height: 48px;
+}
+
+.linkedin-btn:hover {
+  background: var(--primary-dark);
+  color: var(--white);
+  border-color: var(--primary-dark);
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
