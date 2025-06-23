@@ -10,11 +10,13 @@ html {
 }
 
 /* Force 100vw and hide overflow for the entire page */
-html, body {
+html, body, #root, .app, section {
   width: 100vw; /* Usa 100vw para ocupar a largura total da viewport */
   overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 :root {

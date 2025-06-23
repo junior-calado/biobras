@@ -2,19 +2,41 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSelector from '../common/LanguageSelector';
+import { useState } from 'react';
 import './Header.css';
+import HomeIcon from '../../assets/icons/home.svg?react';
+import AboutIcon from '../../assets/icons/info.svg?react';
+import ServicesIcon from '../../assets/icons/services.svg?react';
+import CareersIcon from '../../assets/icons/career.svg?react';
+import ContactIcon from '../../assets/icons/contact.svg?react';
 
 export default function Header() {
   const { currentContent } = useLanguage();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const isHomePage = location.pathname === '/';
+
+  // Fecha o menu ao navegar
+  const handleNavClick = () => setMenuOpen(false);
 
   return (
     <header className="header">
       <nav className="nav">
-        <RouterLink to="/" className="logo">BioBras</RouterLink>
-        <ul className="nav-links">
+        <RouterLink to="/" className="logo" onClick={handleNavClick}>BioBras</RouterLink>
+        <button
+          className={`hamburger${menuOpen ? ' open' : ''}`}
+          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={menuOpen}
+          aria-controls="main-menu"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+        <div className={`menu-overlay${menuOpen ? ' active' : ''}`} onClick={handleNavClick}></div>
+        <ul className={`nav-links${menuOpen ? ' active' : ''}`} id="main-menu">
           <li>
             {isHomePage ? (
               <ScrollLink
@@ -24,16 +46,17 @@ export default function Header() {
                 offset={-70}
                 duration={500}
                 className="nav-link"
+                onClick={handleNavClick}
               >
-                {currentContent.header.home}
+                <HomeIcon className="menu-icon" /> {currentContent.header.home}
               </ScrollLink>
             ) : (
-              <RouterLink to="/" className="nav-link">
-                {currentContent.header.home}
+              <RouterLink to="/" className="nav-link" onClick={handleNavClick}>
+                <HomeIcon className="menu-icon" /> {currentContent.header.home}
               </RouterLink>
             )}
           </li>
-          <li className="dropdown">
+          <li>
             {isHomePage ? (
               <ScrollLink
                 to="sobre"
@@ -41,33 +64,16 @@ export default function Header() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link dropbtn"
+                className="nav-link"
+                onClick={handleNavClick}
               >
-                {currentContent.header.about}
+                <AboutIcon className="menu-icon" /> {currentContent.header.about}
               </ScrollLink>
             ) : (
-              <span className="nav-link dropbtn">{currentContent.header.about}</span>
+              <RouterLink to="/" className="nav-link" onClick={handleNavClick}>
+                <AboutIcon className="menu-icon" /> {currentContent.header.about}
+              </RouterLink>
             )}
-            <div className="dropdown-content">
-              <div className="dropdown-column">
-                <h4>{currentContent.header.aboutDropdown.quemSomos.title}</h4>
-                {currentContent.header.aboutDropdown.quemSomos.links.map((item, idx) => (
-                  <a key={idx} href={item.href} className="dropdown-link">{item.text}</a>
-                ))}
-              </div>
-              <div className="dropdown-column">
-                <h4>{currentContent.header.aboutDropdown.ondeEstamos.title}</h4>
-                {currentContent.header.aboutDropdown.ondeEstamos.links.map((item, idx) => (
-                  <a key={idx} href={item.href} className="dropdown-link">{item.text}</a>
-                ))}
-              </div>
-              <div className="dropdown-column">
-                <h4>{currentContent.header.aboutDropdown.etica.title}</h4>
-                {currentContent.header.aboutDropdown.etica.links.map((item, idx) => (
-                  <a key={idx} href={item.href} className="dropdown-link">{item.text}</a>
-                ))}
-              </div>
-            </div>
           </li>
           <li>
             {isHomePage ? (
@@ -78,12 +84,13 @@ export default function Header() {
                 offset={-70}
                 duration={500}
                 className="nav-link"
+                onClick={handleNavClick}
               >
-                {currentContent.header.services}
+                <ServicesIcon className="menu-icon" /> {currentContent.header.services}
               </ScrollLink>
             ) : (
-              <RouterLink to="/" className="nav-link">
-                {currentContent.header.services}
+              <RouterLink to="/" className="nav-link" onClick={handleNavClick}>
+                <ServicesIcon className="menu-icon" /> {currentContent.header.services}
               </RouterLink>
             )}
           </li>
@@ -96,12 +103,13 @@ export default function Header() {
                 offset={-70}
                 duration={500}
                 className="nav-link"
+                onClick={handleNavClick}
               >
-                {currentContent.header.careers}
+                <CareersIcon className="menu-icon" /> {currentContent.header.careers}
               </ScrollLink>
             ) : (
-              <RouterLink to="/" className="nav-link">
-                {currentContent.header.careers}
+              <RouterLink to="/" className="nav-link" onClick={handleNavClick}>
+                <CareersIcon className="menu-icon" /> {currentContent.header.careers}
               </RouterLink>
             )}
           </li>
@@ -114,17 +122,19 @@ export default function Header() {
                 offset={-70}
                 duration={500}
                 className="nav-link"
+                onClick={handleNavClick}
               >
-                {currentContent.header.contact}
+                <ContactIcon className="menu-icon" /> {currentContent.header.contact}
               </ScrollLink>
             ) : (
-              <RouterLink to="/" className="nav-link">
-                {currentContent.header.contact}
+              <RouterLink to="/" className="nav-link" onClick={handleNavClick}>
+                <ContactIcon className="menu-icon" /> {currentContent.header.contact}
               </RouterLink>
             )}
           </li>
+          <li className="language-mobile-minimal"><LanguageSelector minimal /></li>
         </ul>
-        <LanguageSelector />
+        <div className="language-desktop"><LanguageSelector /></div>
       </nav>
     </header>
   );
