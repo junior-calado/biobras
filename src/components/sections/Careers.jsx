@@ -15,6 +15,7 @@ export default function Careers() {
 
   return (
     <section id="carreiras" className="careers" ref={ref}>
+      <h2>{currentContent.careers.title}</h2>
       <div className="careers-content">
         <div className={`careers-image ${isVisible ? 'slide-in-left' : ''}`}>
           <img src={`${import.meta.env.BASE_URL}images/RH-Industrial.jpg`} alt="Trabalhe Conosco" />

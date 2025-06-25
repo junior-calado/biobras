@@ -8,9 +8,9 @@ export const translations = {
     header: {
       home: 'Início',
       about: 'Sobre',
-      services: 'Serviços',
-      contact: 'Contato',
-      careers: 'Carreiras',
+      services: 'Negócios',
+      contact: 'Fale conosco',
+      careers: 'Trabalhe conosco',
       aboutDropdown: {
         quemSomos: {
           title: 'Quem Somos',
@@ -53,7 +53,7 @@ export const translations = {
       ctaButton: 'Conheça nossos produtos',
     },
     services: {
-      title: 'Nossos Serviços',
+      title: 'Nossos Negócios',
       subtitle: 'Soluções Inovadoras',
       items: [
         {
@@ -74,7 +74,7 @@ export const translations = {
       ],
     },
     contact: {
-      title: 'Entre em Contato',
+      title: 'Fale conosco',
       subtitle: 'Fale Conosco',
       form: {
         name: 'Nome',
@@ -90,7 +90,7 @@ export const translations = {
       },
     },
     careers: {
-      title: 'Carreiras',
+      title: 'Trabalhe conosco',
       subtitle: 'Junte-se à Nossa Equipe',
       description: 'Faça parte de uma empresa que está transformando o futuro através da biotecnologia sustentável.',
       ctaButton: 'Ver Vagas',
@@ -104,7 +104,7 @@ export const translations = {
     footer: {
       aboutText: 'BioBras: Pioneiros em biotecnologia sustentável, transformando recursos naturais em soluções inovadoras.',
       quickLinks: 'Links Rápidos',
-      contactInfo: 'Informações de Contato',
+      contactInfo: 'Informações de Fale conosco',
       email: 'E-mail: comercial@biobras.ind.br',
       phone: 'Telefone: +55 44 9879-0538',
       address: 'Endereço: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
@@ -122,7 +122,7 @@ export const translations = {
       about: 'About',
       services: 'Services',
       contact: 'Contact',
-      careers: 'Careers',
+      careers: 'Trabalhe conosco',
       aboutDropdown: {
         quemSomos: {
           title: 'Who We Are',
@@ -202,7 +202,7 @@ export const translations = {
       },
     },
     careers: {
-      title: 'Careers',
+      title: 'Trabalhe conosco',
       subtitle: 'Join Our Team',
       description: 'Be part of a company that is transforming the future through sustainable biotechnology.',
       ctaButton: 'View Jobs',
@@ -234,7 +234,7 @@ export const translations = {
       about: 'Sobre',
       services: 'Servicios',
       contact: 'Contacto',
-      careers: 'Carreras',
+      careers: 'Trabalhe conosco',
       aboutDropdown: {
         quemSomos: {
           title: 'Quiénes Somos',
@@ -314,7 +314,7 @@ export const translations = {
       },
     },
     careers: {
-      title: 'Carreras',
+      title: 'Trabalhe conosco',
       subtitle: 'Únase a Nuestro Equipo',
       description: 'Sea parte de una empresa que está transformando el futuro a través de la biotecnología sostenible.',
       ctaButton: 'Ver Vacantes',
