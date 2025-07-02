@@ -12,34 +12,37 @@ export const translations = {
       contact: 'Fale conosco',
       careers: 'Trabalhe conosco',
       aboutDropdown: {
-        quemSomos: {
-          title: 'Quem Somos',
-          links: [
-            { text: 'Nosso Propósito', href: '#proposito' },
-            { text: 'Nossa História', href: '#historia' },
-            { text: 'Nossos Reconhecimentos', href: '#reconhecimentos' },
-            { text: 'Vídeo Institucional', href: '#video-institucional' },
-            { text: 'Publicações', href: '#publicacoes' },
-            { text: 'Nossas Notícias', href: '#noticias' },
-          ],
-        },
-        ondeEstamos: {
-          title: 'Onde Estamos',
-          links: [
-            { text: 'Mapa', href: '#mapa' },
-            { text: 'Unidades Industriais', href: '#unidades-industriais' },
-            { text: 'Escritórios de negócios', href: '#escritorios' },
-          ],
-        },
-        etica: {
-          title: 'Ética',
-          links: [
-            { text: 'Canal de Denúncias', href: '#canal-denuncias' },
-            { text: 'Código de Conduta', href: '#codigo-conduta' },
-            { text: 'Código de Conduta de Parceiros Comerciais', href: '#codigo-parceiros' },
-            { text: 'Compliance', href: '#compliance' },
-          ],
-        },
+        title: 'Sobre a Biobras',
+        historia: 'Nossa História',
+        certificacao: 'Nossa Certificação',
+        sustentabilidade: 'Sustentabilidade',
+        ondeEstamos: 'Onde Estamos'
+      },
+      servicesDropdown: {
+        title: 'Negócios',
+        area: 'Área de Atuação',
+        biodiesel: 'Biodiesel',
+        higiene: 'Higiene e Limpeza'
+      },
+      fornecedorDropdown: {
+        title: 'Fornecedor',
+        vegetal: 'Vegetal',
+        animal: 'Animal',
+        misto: 'Misto'
+      },
+      contactDropdown: {
+        title: 'Fale conosco',
+        faleConosco: 'Fale Conosco',
+        endereco: 'Endereço',
+        telefone: 'Telefone',
+        email: 'E-mail'
+      },
+      careersDropdown: {
+        title: 'Trabalhe conosco',
+        vagas: 'Vagas',
+        beneficios: 'Benefícios',
+        cultura: 'Cultura',
+        trabalheConosco: 'Trabalhe Conosco'
       },
     },
     about: {
@@ -57,19 +60,19 @@ export const translations = {
       subtitle: 'Soluções Inovadoras',
       items: [
         {
-          title: 'Pesquisa e Desenvolvimento',
-          description: 'Desenvolvemos soluções biotecnológicas inovadoras para diversos setores.',
-          image: '/images/services/research.jpg',
+          title: 'Área de Atuação',
+          description: 'Atuamos em diversos segmentos, oferecendo soluções inovadoras e sustentáveis.',
+          image: '/images/services/area.jpg',
         },
         {
-          title: 'Consultoria Técnica',
-          description: 'Oferecemos consultoria especializada em biotecnologia e sustentabilidade.',
-          image: '/images/services/consulting.jpg',
+          title: 'Biodiesel',
+          description: 'Produção e desenvolvimento de biodiesel de alta qualidade, promovendo energia limpa.',
+          image: '/images/services/biodiesel.jpg',
         },
         {
-          title: 'Análises Laboratoriais',
-          description: 'Realizamos análises laboratoriais com tecnologia de ponta e precisão.',
-          image: '/images/services/lab.jpg',
+          title: 'Higiene e Limpeza',
+          description: 'Soluções em higiene e limpeza com foco em sustentabilidade e eficiência.',
+          image: '/images/services/higiene.jpg',
         },
       ],
     },
@@ -110,6 +113,64 @@ export const translations = {
       address: 'Endereço: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
       copyright: '© 2024 BioBras. Todos os direitos reservados.',
     },
+    sobre: {
+      historia: { label: 'Nossa História' },
+      certificacao: { titulo: 'Nossa Certificação', texto: 'Conteúdo sobre certificações da Biobras.' },
+      sustentabilidade: { titulo: 'Sustentabilidade', texto: 'Conteúdo sobre sustentabilidade da Biobras.' },
+      ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
+    },
+    negocios: {
+      areaAtuacao: { titulo: 'Área de Atuação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
+      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
+    },
+    fornecedor: {
+      vegetal: {
+        label: 'Vegetal',
+        titulo: 'Produtos de Origem Vegetal',
+        subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
+        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
+        lista1: '🌱 Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
+        lista2: '🌴 Palma: Fonte renovável para processos industriais.',
+        vantagensTitulo: 'Vantagens',
+        vantagem1: '♻️ Baixo impacto ambiental',
+        vantagem2: '🇧🇷 Alta disponibilidade nacional',
+        vantagem3: '🌍 Contribuição para a economia verde'
+      },
+      animal: {
+        label: 'Animal',
+        titulo: 'Produtos de Origem Animal',
+        subtitulo: 'Qualidade e eficiência em cada etapa',
+        texto: 'Os produtos de origem animal são utilizados em processos específicos, garantindo qualidade e eficiência.',
+        lista1: '🐄 Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
+        infoTitulo: 'Informações adicionais',
+        info1: '🔬 Controle de qualidade em toda a cadeia',
+        info2: '🏭 Parcerias com frigoríficos certificados'
+      },
+      misto: {
+        label: 'Misto',
+        titulo: 'Produtos de Origem Mista',
+        subtitulo: 'Flexibilidade e desempenho para diferentes aplicações',
+        texto: 'Os produtos de origem mista combinam matérias-primas vegetais e animais, proporcionando flexibilidade e desempenho em diferentes aplicações.',
+        lista1: '🧪 Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
+        diferenciaisTitulo: 'Diferenciais',
+        diferencial1: '🔄 Versatilidade de uso',
+        diferencial2: '📦 Maior estabilidade de fornecimento',
+        diferencial3: '🏢 Atendimento a diferentes segmentos industriais'
+      }
+    },
+    jobs: {
+      bannerTitle: 'TRABALHE CONOSCO',
+      bannerSubtitle: 'O futuro da tecnologia começa aqui, com você!',
+      bannerButton: 'Cadastre seu currículo',
+      title: 'Vagas em BioBras',
+      subtitle: 'Mostrando 1 - {count} de {count} vagas encontradas',
+      salary: 'Salário a combinar',
+      pcd: 'Elegível PCD',
+      description: 'Descrição',
+      requirements: 'Requisitos',
+      apply: 'Candidatar-se'
+    }
   },
   en: {
     home: {
@@ -122,36 +183,39 @@ export const translations = {
       about: 'About',
       services: 'Services',
       contact: 'Contact',
-      careers: 'Trabalhe conosco',
+      careers: 'Work with us',
       aboutDropdown: {
-        quemSomos: {
-          title: 'Who We Are',
-          links: [
-            { text: 'Our Purpose', href: '#proposito' },
-            { text: 'Our History', href: '#historia' },
-            { text: 'Our Recognition', href: '#reconhecimentos' },
-            { text: 'Institutional Video', href: '#video-institucional' },
-            { text: 'Publications', href: '#publicacoes' },
-            { text: 'Our News', href: '#noticias' },
-          ],
-        },
-        ondeEstamos: {
-          title: 'Where We Are',
-          links: [
-            { text: 'Map', href: '#mapa' },
-            { text: 'Industrial Units', href: '#unidades-industriais' },
-            { text: 'Business Offices', href: '#escritorios' },
-          ],
-        },
-        etica: {
-          title: 'Ethics',
-          links: [
-            { text: 'Whistleblower Channel', href: '#canal-denuncias' },
-            { text: 'Code of Conduct', href: '#codigo-conduta' },
-            { text: 'Business Partners Code of Conduct', href: '#codigo-parceiros' },
-            { text: 'Compliance', href: '#compliance' },
-          ],
-        },
+        title: 'About BioBras',
+        historia: 'Our History',
+        certificacao: 'Our Certification',
+        sustentabilidade: 'Sustainability',
+        ondeEstamos: 'Where We Are'
+      },
+      servicesDropdown: {
+        title: 'Businesses',
+        area: 'Business Area',
+        biodiesel: 'Biodiesel',
+        higiene: 'Hygiene and Cleaning'
+      },
+      fornecedorDropdown: {
+        title: 'Supplier',
+        vegetal: 'Vegetal',
+        animal: 'Animal',
+        misto: 'Mixed'
+      },
+      contactDropdown: {
+        title: 'Contact Us',
+        faleConosco: 'Contact Us',
+        endereco: 'Address',
+        telefone: 'Phone',
+        email: 'Email'
+      },
+      careersDropdown: {
+        title: 'Work with us',
+        vagas: 'Jobs',
+        beneficios: 'Benefits',
+        cultura: 'Culture',
+        trabalheConosco: 'Work With Us'
       },
     },
     about: {
@@ -165,23 +229,23 @@ export const translations = {
       ctaButton: 'Discover our products',
     },
     services: {
-      title: 'Our Services',
+      title: 'Our Businesses',
       subtitle: 'Innovative Solutions',
       items: [
         {
-          title: 'Research and Development',
-          description: 'We develop innovative biotechnological solutions for various sectors.',
-          image: '/images/services/research.jpg',
+          title: 'Business Area',
+          description: 'We operate in several segments, offering innovative and sustainable solutions.',
+          image: '/images/services/area.jpg',
         },
         {
-          title: 'Technical Consulting',
-          description: 'We offer specialized consulting in biotechnology and sustainability.',
-          image: '/images/services/consulting.jpg',
+          title: 'Biodiesel',
+          description: 'Production and development of high-quality biodiesel, promoting clean energy.',
+          image: '/images/services/biodiesel.jpg',
         },
         {
-          title: 'Laboratory Analysis',
-          description: 'We perform laboratory analysis with cutting-edge technology and precision.',
-          image: '/images/services/lab.jpg',
+          title: 'Hygiene and Cleaning',
+          description: 'Hygiene and cleaning solutions focused on sustainability and efficiency.',
+          image: '/images/services/higiene.jpg',
         },
       ],
     },
@@ -222,6 +286,64 @@ export const translations = {
       address: 'Address: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
       copyright: '© 2024 BioBras. All rights reserved.',
     },
+    sobre: {
+      historia: { label: 'Our History' },
+      certificacao: { titulo: 'Our Certification', texto: 'Content about Biobras certifications.' },
+      sustentabilidade: { titulo: 'Sustainability', texto: 'Content about Biobras sustainability.' },
+      ondeEstamos: { titulo: 'Where We Are', texto: 'Content about Biobras location.' }
+    },
+    negocios: {
+      areaAtuacao: { titulo: 'Business Area', texto: 'Content about BioBras business areas, highlighting served segments and innovative solutions.' },
+      biodiesel: { titulo: 'Biodiesel', texto: 'Content about the production, development and importance of biodiesel in sustainability and clean energy.' },
+      higieneLimpeza: { titulo: 'Hygiene and Cleaning', texto: 'Content about hygiene and cleaning solutions offered by BioBras, focusing on sustainability and efficiency.' }
+    },
+    fornecedor: {
+      vegetal: {
+        label: 'Vegetal',
+        titulo: 'Vegetal Origin Products',
+        subtitulo: 'Sustainable raw materials for a greener future',
+        texto: 'Vegetal origin products are fundamental for BioBras sustainable and high-quality production.',
+        lista1: '🌱 Soy fatty acid: Essential for biodiesel and other derivatives.',
+        lista2: '🌴 Palm: Renewable source for industrial processes.',
+        vantagensTitulo: 'Advantages',
+        vantagem1: '♻️ Low environmental impact',
+        vantagem2: '🇧🇷 High national availability',
+        vantagem3: '🌍 Contribution to the green economy'
+      },
+      animal: {
+        label: 'Animal',
+        titulo: 'Animal Origin Products',
+        subtitulo: 'Quality and efficiency at every stage',
+        texto: 'Animal origin products are used in specific processes, ensuring quality and efficiency.',
+        lista1: '🐄 Animal fat: Raw material for biodiesel production and other industrial inputs.',
+        infoTitulo: 'Additional information',
+        info1: '🔬 Quality control throughout the chain',
+        info2: '🏭 Partnerships with certified slaughterhouses'
+      },
+      misto: {
+        label: 'Mixed',
+        titulo: 'Mixed Origin Products',
+        subtitulo: 'Flexibility and performance for different applications',
+        texto: 'Mixed origin products combine vegetal and animal raw materials, providing flexibility and performance in different applications.',
+        lista1: '🧪 Blend of oils and fats: Customized solution to meet specific market demands.',
+        diferenciaisTitulo: 'Differentials',
+        diferencial1: '🔄 Versatility of use',
+        diferencial2: '📦 Greater supply stability',
+        diferencial3: '🏢 Serving different industrial segments'
+      }
+    },
+    jobs: {
+      bannerTitle: 'WORK WITH US',
+      bannerSubtitle: 'The future of technology starts here, with you!',
+      bannerButton: 'Submit your resume',
+      title: 'Jobs at BioBras',
+      subtitle: 'Showing 1 - {count} of {count} jobs found',
+      salary: 'Salary to be defined',
+      pcd: 'PCD Eligible',
+      description: 'Description',
+      requirements: 'Requirements',
+      apply: 'Apply'
+    }
   },
   es: {
     home: {
@@ -234,36 +356,39 @@ export const translations = {
       about: 'Sobre',
       services: 'Servicios',
       contact: 'Contacto',
-      careers: 'Trabalhe conosco',
+      careers: 'Trabaje con nosotros',
       aboutDropdown: {
-        quemSomos: {
-          title: 'Quiénes Somos',
-          links: [
-            { text: 'Nuestro Propósito', href: '#proposito' },
-            { text: 'Nuestra Historia', href: '#historia' },
-            { text: 'Nuestros Reconocimientos', href: '#reconhecimentos' },
-            { text: 'Video Institucional', href: '#video-institucional' },
-            { text: 'Publicaciones', href: '#publicacoes' },
-            { text: 'Nuestras Noticias', href: '#noticias' },
-          ],
-        },
-        ondeEstamos: {
-          title: 'Dónde Estamos',
-          links: [
-            { text: 'Mapa', href: '#mapa' },
-            { text: 'Unidades Industriales', href: '#unidades-industriais' },
-            { text: 'Oficinas Comerciales', href: '#escritorios' },
-          ],
-        },
-        etica: {
-          title: 'Ética',
-          links: [
-            { text: 'Canal de Denuncias', href: '#canal-denuncias' },
-            { text: 'Código de Conducta', href: '#codigo-conduta' },
-            { text: 'Código de Conducta de Socios Comerciales', href: '#codigo-parceiros' },
-            { text: 'Cumplimiento', href: '#compliance' },
-          ],
-        },
+        title: 'Sobre BioBras',
+        historia: 'Nuestra Historia',
+        certificacao: 'Nuestra Certificación',
+        sustentabilidade: 'Sostenibilidad',
+        ondeEstamos: 'Dónde Estamos'
+      },
+      servicesDropdown: {
+        title: 'Negocios',
+        area: 'Área de Actuación',
+        biodiesel: 'Biodiesel',
+        higiene: 'Higiene y Limpieza'
+      },
+      fornecedorDropdown: {
+        title: 'Proveedor',
+        vegetal: 'Vegetal',
+        animal: 'Animal',
+        misto: 'Mixto'
+      },
+      contactDropdown: {
+        title: 'Contáctenos',
+        faleConosco: 'Contáctenos',
+        endereco: 'Dirección',
+        telefone: 'Teléfono',
+        email: 'Correo'
+      },
+      careersDropdown: {
+        title: 'Trabaje con nosotros',
+        vagas: 'Vacantes',
+        beneficios: 'Beneficios',
+        cultura: 'Cultura',
+        trabalheConosco: 'Trabaje con nosotros'
       },
     },
     about: {
@@ -277,23 +402,23 @@ export const translations = {
       ctaButton: 'Descubre nuestros productos',
     },
     services: {
-      title: 'Nuestros Servicios',
+      title: 'Nuestros Negocios',
       subtitle: 'Soluciones Innovadoras',
       items: [
         {
-          title: 'Investigación y Desarrollo',
-          description: 'Desarrollamos soluciones biotecnológicas innovadoras para diversos sectores.',
-          image: '/images/services/research.jpg',
+          title: 'Área de Actuación',
+          description: 'Actuamos en varios segmentos, ofreciendo soluciones innovadoras y sostenibles.',
+          image: '/images/services/area.jpg',
         },
         {
-          title: 'Consultoría Técnica',
-          description: 'Ofrecemos consultoría especializada en biotecnología y sostenibilidad.',
-          image: '/images/services/consulting.jpg',
+          title: 'Biodiesel',
+          description: 'Producción y desarrollo de biodiesel de alta calidad, promoviendo energía limpia.',
+          image: '/images/services/biodiesel.jpg',
         },
         {
-          title: 'Análisis de Laboratorio',
-          description: 'Realizamos análisis de laboratorio con tecnología de punta y precisión.',
-          image: '/images/services/lab.jpg',
+          title: 'Higiene y Limpieza',
+          description: 'Soluciones de higiene y limpieza con enfoque en sostenibilidad y eficiencia.',
+          image: '/images/services/higiene.jpg',
         },
       ],
     },
@@ -334,5 +459,63 @@ export const translations = {
       address: 'Dirección: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
       copyright: '© 2024 BioBras. Todos los derechos reservados.',
     },
+    sobre: {
+      historia: { label: 'Nossa História' },
+      certificacao: { titulo: 'Nossa Certificação', texto: 'Conteúdo sobre certificações da Biobras.' },
+      sustentabilidade: { titulo: 'Sustentabilidade', texto: 'Conteúdo sobre sustentabilidade da Biobras.' },
+      ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
+    },
+    negocios: {
+      areaAtuacao: { titulo: 'Área de Atuação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
+      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
+    },
+    fornecedor: {
+      vegetal: {
+        label: 'Vegetal',
+        titulo: 'Produtos de Origem Vegetal',
+        subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
+        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
+        lista1: '🌱 Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
+        lista2: '🌴 Palma: Fonte renovável para processos industriais.',
+        vantagensTitulo: 'Vantagens',
+        vantagem1: '♻️ Baixo impacto ambiental',
+        vantagem2: '🇧🇷 Alta disponibilidade nacional',
+        vantagem3: '🌍 Contribuição para a economia verde'
+      },
+      animal: {
+        label: 'Animal',
+        titulo: 'Produtos de Origem Animal',
+        subtitulo: 'Qualidade e eficiência em cada etapa',
+        texto: 'Os produtos de origem animal são utilizados em processos específicos, garantindo qualidade e eficiência.',
+        lista1: '🐄 Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
+        infoTitulo: 'Informações adicionais',
+        info1: '🔬 Controle de qualidade em toda a cadeia',
+        info2: '🏭 Parcerias com frigoríficos certificados'
+      },
+      misto: {
+        label: 'Misto',
+        titulo: 'Produtos de Origem Mista',
+        subtitulo: 'Flexibilidade e desempenho para diferentes aplicações',
+        texto: 'Os produtos de origem mista combinam matérias-primas vegetais e animais, proporcionando flexibilidade e desempenho em diferentes aplicações.',
+        lista1: '🧪 Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
+        diferenciaisTitulo: 'Diferenciais',
+        diferencial1: '🔄 Versatilidade de uso',
+        diferencial2: '📦 Maior estabilidade de fornecimento',
+        diferencial3: '🏢 Atendimento a diferentes segmentos industriais'
+      }
+    },
+    jobs: {
+      bannerTitle: 'TRABALHE CONOSCO',
+      bannerSubtitle: 'O futuro da tecnologia começa aqui, com você!',
+      bannerButton: 'Cadastre seu currículo',
+      title: 'Vagas em BioBras',
+      subtitle: 'Mostrando 1 - {count} de {count} vagas encontradas',
+      salary: 'Salário a combinar',
+      pcd: 'Elegível PCD',
+      description: 'Descrição',
+      requirements: 'Requisitos',
+      apply: 'Candidatar-se'
+    }
   },
 }; 

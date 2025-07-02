@@ -10,6 +10,9 @@ import Contact from '@/components/sections/Contact';
 import Careers from '@/components/sections/Careers';
 import Jobs from '@/pages/Jobs';
 import Footer from '@/components/layout/Footer';
+import SobreBiobras from './pages/SobreBiobras';
+import Negocios from './pages/Negocios';
+import Fornecedor from './pages/Fornecedor';
 import './App.css';
 
 function ScrollToTop() {
@@ -36,11 +39,11 @@ function App() {
   return (
     <HelmetProvider>
       <LanguageProvider>
-        <Router basename="/biobras">
+        <Router>
           <ScrollToTop />
           <div className="app">
             <Helmet>
-              <title>BioBras - Soluções em Biotecnologia Sustentável</title>
+              <title>BioBras - Soluções em Biodisel</title>
               <meta name="description" content="BioBras: Pioneiros em biotecnologia sustentável, transformando recursos naturais em soluções inovadoras para um futuro mais verde." />
               <meta name="keywords" content="biotecnologia, sustentabilidade, energia renovável, pesquisa e desenvolvimento, consultoria técnica, análises laboratoriais" />
               {/* Open Graph / Facebook */}
@@ -63,6 +66,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vagas" element={<Jobs />} />
+                <Route path="/sobre" element={<SobreBiobras />} />
+                <Route path="/negocios" element={<Negocios />} />
+                <Route path="/fornecedor" element={<Fornecedor />} />
               </Routes>
             </main>
             <Footer />

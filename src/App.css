@@ -1477,3 +1477,47 @@ section h2::after {
   display: inline-flex;
   align-items: center;
 }
+
+main {
+  padding-top: 110px;
+}
+
+/* Bloco de informação estilizado */
+.info-block {
+  background: #f7f9fa;
+  border-radius: 10px;
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(90,164,59,0.05);
+}
+.info-block h2 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+.info-block .subtitle {
+  color: #5aa43b;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 1.2em;
+}
+.highlight {
+  color: #5aa43b;
+  font-weight: bold;
+}
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.styled-list li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.info-extra h4 {
+  margin-top: 24px;
+  color: #1abc9c;
+  font-size: 1.1em;
+}

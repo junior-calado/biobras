@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '../components/layout/Header';
 import './Jobs.css';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const vagas = [
   {
@@ -59,6 +60,7 @@ const vagas = [
 ];
 
 export default function Jobs() {
+  const { currentContent } = useLanguage();
   const [vagaSelecionada, setVagaSelecionada] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -72,7 +74,7 @@ export default function Jobs() {
             <span className="job-icon">📍</span>
             <span>{vaga.local}</span>
             {vaga.salario && <span className="job-icon">💲</span>}
-            {vaga.pcd && <span className="job-icon">♿ Elegível PCD</span>}
+            {vaga.pcd && <span className="job-icon">♿ {currentContent.jobs.pcd}</span>}
           </div>
           <div className="job-chips">
             <span className="job-chip job-chip-main">{vaga.tipo}</span>
@@ -101,14 +103,14 @@ export default function Jobs() {
       <section className="jobs-banner">
         <div className="jobs-banner-bg"></div>
         <div className="jobs-banner-content">
-          <h2>TRABALHE CONOSCO</h2>
-          <p>O futuro da tecnologia começa aqui, com você!</p>
-          <a className="jobs-banner-btn standard-button" href="#" target="_blank" rel="noopener noreferrer">Cadastre seu currículo</a>
+          <h2>{currentContent.jobs.bannerTitle}</h2>
+          <p>{currentContent.jobs.bannerSubtitle}</p>
+          <a className="jobs-banner-btn standard-button" href="#" target="_blank" rel="noopener noreferrer">{currentContent.jobs.bannerButton}</a>
         </div>
       </section>
       <main className="jobs-main custom-jobs-main">
-        <h1 className="jobs-title">Vagas em BioBras</h1>
-        <div className="jobs-subtitle">Mostrando 1 - {vagas.length} de <b>{vagas.length} vagas encontradas</b></div>
+        <h1 className="jobs-title">{currentContent.jobs.title}</h1>
+        <div className="jobs-subtitle">{currentContent.jobs.subtitle.replace('{count}', vagas.length)}</div>
         <div className="jobs-divider"></div>
         <div className="jobs-grid">{vagasGrid()}</div>
 
@@ -124,15 +126,15 @@ export default function Jobs() {
                   <span className="job-chip" key={i}>{n}</span>
                 ))}
                 <span className="job-chip job-chip-grey">{vagaSelecionada.local}</span>
-                {vagaSelecionada.salario && <span className="job-chip job-chip-grey">💲 Salário a combinar</span>}
-                {vagaSelecionada.pcd && <span className="job-chip job-chip-grey">♿ Elegível PCD</span>}
+                {vagaSelecionada.salario && <span className="job-chip job-chip-grey">💲 {currentContent.jobs.salary}</span>}
+                {vagaSelecionada.pcd && <span className="job-chip job-chip-grey">♿ {currentContent.jobs.pcd}</span>}
               </div>
               <div className="job-modal-section">
-                <h4>Descrição</h4>
+                <h4>{currentContent.jobs.description}</h4>
                 <p>{vagaSelecionada.detalhes}</p>
               </div>
               <div className="job-modal-section">
-                <h4>Requisitos</h4>
+                <h4>{currentContent.jobs.requirements}</h4>
                 <ul>
                   {vagaSelecionada.requisitos.map((req, idx) => (
                     <li key={idx}>{req}</li>
@@ -140,7 +142,7 @@ export default function Jobs() {
                 </ul>
               </div>
               <div style={{textAlign: 'right'}}>
-                <button className="standard-button" style={{minWidth: 180}} >Candidatar-se</button>
+                <button className="standard-button" style={{minWidth: 180}} >{currentContent.jobs.apply}</button>
               </div>
             </div>
           </div>

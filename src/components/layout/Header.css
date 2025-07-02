@@ -12,11 +12,11 @@
 
 .nav {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 1.2rem 2rem 0.7rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 0;
 }
 
 .logo {
@@ -449,4 +449,26 @@
   height: 100vh !important;
   position: fixed !important;
   width: 100vw !important;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  flex: 0 0 auto;
+  margin-right: auto;
+}
+
+.header-menu {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header-lang {
+  flex: 0 0 auto;
+  margin-left: auto;
 } 
