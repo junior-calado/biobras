@@ -39,7 +39,7 @@ function App() {
   return (
     <HelmetProvider>
       <LanguageProvider>
-        <Router>
+        <Router basename="/biobras">
           <ScrollToTop />
           <div className="app">
             <Helmet>
