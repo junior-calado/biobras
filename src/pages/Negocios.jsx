@@ -35,7 +35,7 @@ export default function Negocios() {
   ];
 
   return (
-    <div style={{ display: 'flex', minHeight: '80vh' }}>
+    <div className="page-content" style={{ display: 'flex', minHeight: '80vh' }}>
       <aside style={{ minWidth: 220, borderRight: '1px solid #eee', padding: '32px 16px 0 0' }}>
         <nav>
           <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -47,7 +47,7 @@ export default function Negocios() {
           </ul>
         </nav>
       </aside>
-      <main style={{ flex: 1, padding: '32px 48px' }}>
+      <main style={{ flex: 1, padding: '32px 2rem 2rem 2rem', minHeight: '60vh' }}>
         {sections.find(sec => sec.key === active)?.component}
       </main>
     </div>

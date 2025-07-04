@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,0.97);
+  background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   z-index: 1200;
   border-bottom: 3px solid #fde017;
@@ -13,10 +13,35 @@
 .nav {
   display: flex;
   align-items: center;
-  padding: 1.2rem 2rem 0.7rem 2rem;
-  max-width: 1200px;
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  max-width: 1400px;
   margin: 0 auto;
-  gap: 0;
+  min-height: 64px;
+}
+
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.header-menu {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 56px;
+}
+
+.header-lang {
+  flex: 0 0 auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img, .header-logo-group img {
+  display: block;
 }
 
 .logo {
@@ -35,29 +60,25 @@
 
 .nav-links {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 2.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 .nav-link, .dropbtn {
-  padding: 0.5rem 0.8rem;
-  color: #374151;
-  text-decoration: none;
-  cursor: pointer;
+  color: #fff;
   font-size: 1.15rem;
   font-weight: 500;
   background: none;
   border: none;
   transition: color 0.2s;
+  padding: 0.5rem 0.8rem;
 }
 
 .nav-link:hover, .dropbtn:hover {
-  color: #5aa43b;
+  color: #fde017;
   background: none;
   text-decoration: none;
 }
@@ -459,13 +480,6 @@
 .header-logo {
   flex: 0 0 auto;
   margin-right: auto;
-}
-
-.header-menu {
-  flex: 1 1 0%;
-  display: flex;
-  justify-content: center;
-  margin: 0;
 }
 
 .header-lang {

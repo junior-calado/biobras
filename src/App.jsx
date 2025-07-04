@@ -13,6 +13,7 @@ import Footer from '@/components/layout/Footer';
 import SobreBiobras from './pages/SobreBiobras';
 import Negocios from './pages/Negocios';
 import Fornecedor from './pages/Fornecedor';
+import Cultura from './pages/Cultura';
 import './App.css';
 
 function ScrollToTop() {
@@ -69,6 +70,7 @@ function App() {
                 <Route path="/sobre" element={<SobreBiobras />} />
                 <Route path="/negocios" element={<Negocios />} />
                 <Route path="/fornecedor" element={<Fornecedor />} />
+                <Route path="/cultura" element={<Cultura />} />
               </Routes>
             </main>
             <Footer />

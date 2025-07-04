@@ -20,7 +20,7 @@ export const translations = {
       },
       servicesDropdown: {
         title: 'Negócios',
-        area: 'Área de Atuação',
+        area: 'Exportação',
         biodiesel: 'Biodiesel',
         higiene: 'Higiene e Limpeza'
       },
@@ -40,9 +40,8 @@ export const translations = {
       careersDropdown: {
         title: 'Trabalhe conosco',
         vagas: 'Vagas',
-        beneficios: 'Benefícios',
         cultura: 'Cultura',
-        trabalheConosco: 'Trabalhe Conosco'
+        trabalheConosco: 'Trabalhe conosco',
       },
     },
     about: {
@@ -60,7 +59,7 @@ export const translations = {
       subtitle: 'Soluções Inovadoras',
       items: [
         {
-          title: 'Área de Atuação',
+          title: 'Exportação',
           description: 'Atuamos em diversos segmentos, oferecendo soluções inovadoras e sustentáveis.',
           image: '/images/services/area.jpg',
         },
@@ -120,7 +119,7 @@ export const translations = {
       ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
     },
     negocios: {
-      areaAtuacao: { titulo: 'Área de Atuação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
       biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
       higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
     },
@@ -130,33 +129,33 @@ export const translations = {
         titulo: 'Produtos de Origem Vegetal',
         subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
         texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
-        lista1: '🌱 Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
-        lista2: '🌴 Palma: Fonte renovável para processos industriais.',
+        lista1: 'Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
+        lista2: 'Palma: Fonte renovável para processos industriais.',
         vantagensTitulo: 'Vantagens',
-        vantagem1: '♻️ Baixo impacto ambiental',
-        vantagem2: '🇧🇷 Alta disponibilidade nacional',
-        vantagem3: '🌍 Contribuição para a economia verde'
+        vantagem1: 'Baixo impacto ambiental',
+        vantagem2: 'Alta disponibilidade nacional',
+        vantagem3: 'Contribuição para a economia verde'
       },
       animal: {
         label: 'Animal',
         titulo: 'Produtos de Origem Animal',
         subtitulo: 'Qualidade e eficiência em cada etapa',
         texto: 'Os produtos de origem animal são utilizados em processos específicos, garantindo qualidade e eficiência.',
-        lista1: '🐄 Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
+        lista1: 'Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
         infoTitulo: 'Informações adicionais',
-        info1: '🔬 Controle de qualidade em toda a cadeia',
-        info2: '🏭 Parcerias com frigoríficos certificados'
+        info1: 'Controle de qualidade em toda a cadeia',
+        info2: 'Parcerias com frigoríficos certificados'
       },
       misto: {
         label: 'Misto',
         titulo: 'Produtos de Origem Mista',
         subtitulo: 'Flexibilidade e desempenho para diferentes aplicações',
         texto: 'Os produtos de origem mista combinam matérias-primas vegetais e animais, proporcionando flexibilidade e desempenho em diferentes aplicações.',
-        lista1: '🧪 Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
+        lista1: 'Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
         diferenciaisTitulo: 'Diferenciais',
-        diferencial1: '🔄 Versatilidade de uso',
-        diferencial2: '📦 Maior estabilidade de fornecimento',
-        diferencial3: '🏢 Atendimento a diferentes segmentos industriais'
+        diferencial1: 'Versatilidade de uso',
+        diferencial2: 'Maior estabilidade de fornecimento',
+        diferencial3: 'Atendimento a diferentes segmentos industriais'
       }
     },
     jobs: {
@@ -213,9 +212,8 @@ export const translations = {
       careersDropdown: {
         title: 'Work with us',
         vagas: 'Jobs',
-        beneficios: 'Benefits',
         cultura: 'Culture',
-        trabalheConosco: 'Work With Us'
+        trabalheConosco: 'Work With Us',
       },
     },
     about: {
@@ -233,8 +231,8 @@ export const translations = {
       subtitle: 'Innovative Solutions',
       items: [
         {
-          title: 'Business Area',
-          description: 'We operate in several segments, offering innovative and sustainable solutions.',
+          title: 'Exportação',
+          description: 'Atuamos em diversos segmentos, oferecendo soluções inovadoras e sustentáveis.',
           image: '/images/services/area.jpg',
         },
         {
@@ -303,33 +301,33 @@ export const translations = {
         titulo: 'Vegetal Origin Products',
         subtitulo: 'Sustainable raw materials for a greener future',
         texto: 'Vegetal origin products are fundamental for BioBras sustainable and high-quality production.',
-        lista1: '🌱 Soy fatty acid: Essential for biodiesel and other derivatives.',
-        lista2: '🌴 Palm: Renewable source for industrial processes.',
+        lista1: 'Soy fatty acid: Essential for biodiesel and other derivatives.',
+        lista2: 'Palm: Renewable source for industrial processes.',
         vantagensTitulo: 'Advantages',
-        vantagem1: '♻️ Low environmental impact',
-        vantagem2: '🇧🇷 High national availability',
-        vantagem3: '🌍 Contribution to the green economy'
+        vantagem1: 'Low environmental impact',
+        vantagem2: 'High national availability',
+        vantagem3: 'Contribution to the green economy'
       },
       animal: {
         label: 'Animal',
         titulo: 'Animal Origin Products',
         subtitulo: 'Quality and efficiency at every stage',
         texto: 'Animal origin products are used in specific processes, ensuring quality and efficiency.',
-        lista1: '🐄 Animal fat: Raw material for biodiesel production and other industrial inputs.',
-        infoTitulo: 'Additional information',
-        info1: '🔬 Quality control throughout the chain',
-        info2: '🏭 Partnerships with certified slaughterhouses'
+        lista1: 'Grasa animal: Materia prima para la producción de biodiesel y otros insumos industriales.',
+        infoTitulo: 'Información adicional',
+        info1: 'Control de calidad en toda la cadena',
+        info2: 'Alianzas con frigoríficos certificados'
       },
       misto: {
         label: 'Mixed',
         titulo: 'Mixed Origin Products',
         subtitulo: 'Flexibility and performance for different applications',
         texto: 'Mixed origin products combine vegetal and animal raw materials, providing flexibility and performance in different applications.',
-        lista1: '🧪 Blend of oils and fats: Customized solution to meet specific market demands.',
-        diferenciaisTitulo: 'Differentials',
-        diferencial1: '🔄 Versatility of use',
-        diferencial2: '📦 Greater supply stability',
-        diferencial3: '🏢 Serving different industrial segments'
+        lista1: 'Blend of oils and fats: Customized solution to meet specific market demands.',
+        diferenciaisTitulo: 'Diferenciales',
+        diferencial1: 'Versatilidad de uso',
+        diferencial2: 'Mayor estabilidad de suministro',
+        diferencial3: 'Atención a diferentes segmentos industriales'
       }
     },
     jobs: {
@@ -386,9 +384,8 @@ export const translations = {
       careersDropdown: {
         title: 'Trabaje con nosotros',
         vagas: 'Vacantes',
-        beneficios: 'Beneficios',
         cultura: 'Cultura',
-        trabalheConosco: 'Trabaje con nosotros'
+        trabalheConosco: 'Trabaje con nosotros',
       },
     },
     about: {
@@ -406,8 +403,8 @@ export const translations = {
       subtitle: 'Soluciones Innovadoras',
       items: [
         {
-          title: 'Área de Actuación',
-          description: 'Actuamos en varios segmentos, ofreciendo soluciones innovadoras y sostenibles.',
+          title: 'Exportação',
+          description: 'Atuamos em diversos segmentos, oferecendo soluções inovadoras e sustentáveis.',
           image: '/images/services/area.jpg',
         },
         {
@@ -466,7 +463,7 @@ export const translations = {
       ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
     },
     negocios: {
-      areaAtuacao: { titulo: 'Área de Atuação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
       biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
       higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
     },
@@ -476,33 +473,33 @@ export const translations = {
         titulo: 'Produtos de Origem Vegetal',
         subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
         texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
-        lista1: '🌱 Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
-        lista2: '🌴 Palma: Fonte renovável para processos industriais.',
+        lista1: 'Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
+        lista2: 'Palma: Fonte renovável para processos industriais.',
         vantagensTitulo: 'Vantagens',
-        vantagem1: '♻️ Baixo impacto ambiental',
-        vantagem2: '🇧🇷 Alta disponibilidade nacional',
-        vantagem3: '🌍 Contribuição para a economia verde'
+        vantagem1: 'Baixo impacto ambiental',
+        vantagem2: 'Alta disponibilidade nacional',
+        vantagem3: 'Contribuição para a economia verde'
       },
       animal: {
         label: 'Animal',
         titulo: 'Produtos de Origem Animal',
         subtitulo: 'Qualidade e eficiência em cada etapa',
         texto: 'Os produtos de origem animal são utilizados em processos específicos, garantindo qualidade e eficiência.',
-        lista1: '🐄 Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
+        lista1: 'Gordura animal: Matéria-prima para produção de biodiesel e outros insumos industriais.',
         infoTitulo: 'Informações adicionais',
-        info1: '🔬 Controle de qualidade em toda a cadeia',
-        info2: '🏭 Parcerias com frigoríficos certificados'
+        info1: 'Controle de qualidade em toda a cadeia',
+        info2: 'Parcerias com frigoríficos certificados'
       },
       misto: {
         label: 'Misto',
         titulo: 'Produtos de Origem Mista',
         subtitulo: 'Flexibilidade e desempenho para diferentes aplicações',
         texto: 'Os produtos de origem mista combinam matérias-primas vegetais e animais, proporcionando flexibilidade e desempenho em diferentes aplicações.',
-        lista1: '🧪 Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
+        lista1: 'Blend de óleos e gorduras: Solução customizada para atender demandas específicas do mercado.',
         diferenciaisTitulo: 'Diferenciais',
-        diferencial1: '🔄 Versatilidade de uso',
-        diferencial2: '📦 Maior estabilidade de fornecimento',
-        diferencial3: '🏢 Atendimento a diferentes segmentos industriais'
+        diferencial1: 'Versatilidade de uso',
+        diferencial2: 'Maior estabilidade de fornecimento',
+        diferencial3: 'Atendimento a diferentes segmentos industriais'
       }
     },
     jobs: {

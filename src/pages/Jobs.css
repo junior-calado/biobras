@@ -6,7 +6,7 @@
 
 .jobs-main {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -121,7 +121,7 @@
 }
 
 @media (max-width: 768px) {
-  .jobs-main {
+  .jobs-main, .custom-jobs-main {
     padding: 1rem;
   }
 
@@ -145,7 +145,7 @@
 .custom-jobs-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1.5rem 2rem 2rem 2rem;
 }
 .jobs-title {
   font-size: 2rem;
