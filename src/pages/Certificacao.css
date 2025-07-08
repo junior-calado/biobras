@@ -1,0 +1,321 @@
+.certification-card {
+  max-width: 900px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #1abc9c22;
+  border: 2px solid #1abc9c33;
+  padding: 48px 64px 40px 64px;
+  text-align: left;
+  animation: fadeIn 0.8s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.certification-badge {
+  background: linear-gradient(135deg, #e0f7fa 60%, #1abc9c22 100%);
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+  min-width: 160px;
+  min-height: 160px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px #1abc9c33;
+}
+
+.certification-badge img {
+  width: 120px;
+  height: auto;
+}
+
+.certification-card h2 {
+  color: #1abc9c;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.certification-content {
+  flex: 1;
+}
+
+.certification-description {
+  color: #444;
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+}
+
+.certification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.certification-list li {
+  font-size: 1.05rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 1.2em;
+}
+
+@media (max-width: 700px) {
+  .certification-card {
+    flex-direction: column;
+    padding: 32px 16px 24px 16px;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+  }
+  .certification-badge {
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .certification-card h2 {
+    justify-content: center;
+  }
+  .certification-content {
+    width: 100%;
+  }
+  .certification-list {
+    text-align: left;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.certification-hero {
+  display: flex;
+  align-items: stretch;
+  gap: 56px;
+  background: linear-gradient(120deg, #f6faf8 60%, #e0f7fa 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 40px #1abc9c22, 0 1.5px 8px #1abc9c11;
+  padding: 64px 80px;
+  margin: 56px auto;
+  max-width: 1200px;
+  transition: box-shadow 0.3s;
+}
+.certification-hero:hover {
+  box-shadow: 0 16px 64px #1abc9c33, 0 2px 12px #1abc9c22;
+}
+
+.certification-logo-block {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff 70%, #e0f7fa 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px #1abc9c22;
+  padding: 40px 24px;
+  margin: auto 0;
+  transition: transform 0.2s;
+}
+.certification-logo-block img {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 2px 12px #1abc9c33);
+  transition: transform 0.2s;
+}
+.certification-logo-block:hover img {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.certification-info-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certification-info-block h1 {
+  color: #1abc9c;
+  font-size: 2.7rem;
+  margin-bottom: 0.3em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #1abc9c11;
+}
+
+.certification-info-block h2 {
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.certification-info-block p {
+  color: #444;
+  font-size: 1.18rem;
+  margin-bottom: 1.7em;
+  line-height: 1.7;
+}
+
+.certification-info-block h3 {
+  color: #1abc9c;
+  font-size: 1.18rem;
+  margin-bottom: 0.7em;
+  margin-top: 1.7em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.certification-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+}
+
+.certification-benefits li {
+  font-size: 1.13rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1abc9c;
+  background: linear-gradient(90deg, #e0f7fa 80%, #fff 100%);
+  border-radius: 10px;
+  padding: 10px 22px;
+  box-shadow: 0 1px 6px #1abc9c11;
+  font-weight: 500;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.certification-benefits li:hover {
+  background: linear-gradient(90deg, #b2f1e6 80%, #fff 100%);
+  box-shadow: 0 2px 12px #1abc9c22;
+}
+
+.certification-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #1abc9c 80%, #159c80 100%);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 14px 32px;
+  text-decoration: none;
+  font-size: 1.13rem;
+  box-shadow: 0 2px 8px #1abc9c22;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+.certification-link:hover {
+  background: linear-gradient(90deg, #159c80 80%, #1abc9c 100%);
+  box-shadow: 0 4px 16px #1abc9c33;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.icon {
+  font-size: 1.25em;
+  filter: drop-shadow(0 1px 2px #1abc9c22);
+}
+
+@media (max-width: 1100px) {
+  .certification-hero {
+    flex-direction: column;
+    padding: 40px 12px;
+    gap: 32px;
+  }
+  .certification-logo-block {
+    margin: 0 auto;
+    padding: 24px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .certification-hero {
+    padding: 18px 2vw;
+    gap: 18px;
+    border-radius: 12px;
+  }
+  .certification-logo-block {
+    padding: 10px 2px;
+    border-radius: 12px;
+  }
+  .certification-info-block h1 {
+    font-size: 1.5rem;
+  }
+  .certification-info-block h2 {
+    font-size: 1.1rem;
+  }
+  .certification-benefits li {
+    font-size: 0.98rem;
+    padding: 7px 10px;
+  }
+  .certification-link {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+.certification-logo-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+  margin-right: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.glass-badge {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  box-shadow: 0 8px 32px #1abc9c33, 0 2px 8px #1abc9c22, 0 0 0 6px #e0f7fa99;
+  backdrop-filter: blur(8px) saturate(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid #e0f7fa;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin: 0 0 0 0;
+}
+.glass-badge::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 40px;
+  height: 18px;
+  background: linear-gradient(120deg, #fff8, #e0f7fa00 80%);
+  border-radius: 50%;
+  opacity: 0.7;
+  filter: blur(2px);
+}
+.glass-badge img {
+  width: 110px;
+  height: auto;
+  filter: drop-shadow(0 2px 12px #1abc9c33);
+  z-index: 1;
+}
+
+@media (max-width: 1100px) {
+  .certification-logo-badge {
+    margin: 0 auto 18px auto;
+  }
+} 

@@ -95,8 +95,8 @@ export default function Header() {
       <nav className="nav">
         <div className="header-logo-group" style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: '0 0 auto' }}>
           <a className="logo" onClick={() => handleSectionNav('inicio')} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', height: '100%' }}>
-            <img src={`${import.meta.env.BASE_URL}images/Icon_transparente.png`} alt="Ícone BioBras" style={{ height: '50px', display: 'block', marginTop: '-10px' }} />
-            <img src={`${import.meta.env.BASE_URL}images/letreiro_transparente.png`} alt="Logo BioBras" style={{ height: '60px', display: 'block', marginLeft: '8px' }} />
+            <img src={`${import.meta.env.BASE_URL}images/Icon_transparente.png`} alt="Ícone Biobras" style={{ height: '50px', display: 'block', marginTop: '-10px' }} />
+            <img src={`${import.meta.env.BASE_URL}images/letreiro_transparente.png`} alt="Logo Biobras" style={{ height: '60px', display: 'block', marginLeft: '8px' }} />
           </a>
         </div>
         <div className="header-menu" style={{ flex: '1 1 0%', display: 'flex', justifyContent: 'center', marginLeft: '48px' }}>
@@ -163,9 +163,7 @@ export default function Header() {
                   style={isMobile ? { maxHeight: openDropdown === 'fornecedor' ? 500 : 0, overflow: 'hidden', transition: 'max-height 0.35s cubic-bezier(0.4,0,0.2,1)', display: 'flex', flexDirection: 'column', position: 'static', boxShadow: 'none', padding: 0, background: 'none' } : {}}>
                   <div className="dropdown-column">
                     <h4>{currentContent.header.fornecedorDropdown.title}</h4>
-                    <RouterLink to="/fornecedor?sec=vegetal" className="submenu-item" onClick={handleNavClick}>{currentContent.header.fornecedorDropdown.vegetal}</RouterLink>
-                    <RouterLink to="/fornecedor?sec=animal" className="submenu-item" onClick={handleNavClick}>{currentContent.header.fornecedorDropdown.animal}</RouterLink>
-                    <RouterLink to="/fornecedor?sec=misto" className="submenu-item" onClick={handleNavClick}>{currentContent.header.fornecedorDropdown.misto}</RouterLink>
+                    <RouterLink to="/fornecedor" className="submenu-item" onClick={handleNavClick}>Seja nosso fornecedor</RouterLink>
                   </div>
                 </div>
               ) : null}

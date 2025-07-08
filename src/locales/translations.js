@@ -1,8 +1,8 @@
 export const translations = {
   pt: {
     home: {
-      title: 'BioBras',
-      subtitle: 'Transformando o futuro através da biotecnologia sustentável',
+      title: 'Biobras',
+      subtitle: 'Especialistas em sebo bovino e, em breve, biodiesel sustentável para o futuro da energia',
       ctaButton: 'Conheça Nossas Soluções',
     },
     header: {
@@ -45,18 +45,16 @@ export const translations = {
       },
     },
     about: {
-      title: 'Sobre a BioBras',
-      mainText: `Na BioBras, acreditamos que o <span class="highlight-green">futuro</span> é cultivado hoje. <br />
-      Somos pioneiros em biotecnologia, <br />
-      transformando recursos naturais em soluções <span class="highlight-green">sustentáveis</span> que impulsionam a indústria e preservam o <span class="highlight-green">meio ambiente.</span>`,
-      description: 'Do campo à inovação, nossa paixão é gerar energia renovável que alimenta o progresso e constrói um amanhã mais verde para todos.',
-      shortMainText: 'Na BioBras, cultivamos o <span class="highlight-green">futuro</span> com soluções <span class="highlight-green">sustentáveis</span> em biotecnologia para um <span class="highlight-green">meio ambiente</span> melhor.',
-      shortDescription: 'Energia renovável, inovação e compromisso com um amanhã mais verde.',
+      title: 'Sobre a Biobras',
+      mainText: `Biobras: referência em sebo bovino e, em breve, biodiesel. Inovação, responsabilidade e energia sustentável para o futuro da indústria.`,
+      description: 'Matéria-prima de qualidade, compromisso ambiental e foco em soluções energéticas inovadoras.',
+      shortMainText: 'Desde 2021, a Biobras oferece matéria-prima de qualidade para diversos setores industriais e, em breve, também biodiesel.',
+      shortDescription: 'Biodiesel, inovação, responsabilidade e energia sustentável.',
       ctaButton: 'Conheça nossos produtos',
     },
     services: {
       title: 'Nossos Negócios',
-      subtitle: 'Soluções Inovadoras',
+      subtitle: 'Biodiesel, inovação e soluções sustentáveis para a indústria',
       items: [
         {
           title: 'Exportação',
@@ -77,7 +75,7 @@ export const translations = {
     },
     contact: {
       title: 'Fale conosco',
-      subtitle: 'Fale Conosco',
+      subtitle: 'Energia sustentável começa com uma boa conversa',
       form: {
         name: 'Nome',
         email: 'E-mail',
@@ -93,7 +91,7 @@ export const translations = {
     },
     careers: {
       title: 'Trabalhe conosco',
-      subtitle: 'Junte-se à Nossa Equipe',
+      subtitle: 'Venha construir o futuro do biodiesel e da energia limpa',
       description: 'Faça parte de uma empresa que está transformando o futuro através da biotecnologia sustentável.',
       ctaButton: 'Ver Vagas',
       benefits: [
@@ -104,31 +102,39 @@ export const translations = {
       ],
     },
     footer: {
-      aboutText: 'BioBras: Pioneiros em biotecnologia sustentável, transformando recursos naturais em soluções inovadoras.',
+      aboutText: 'Biobras: Pioneiros em biotecnologia sustentável, transformando recursos naturais em soluções inovadoras.',
       quickLinks: 'Links Rápidos',
       contactInfo: 'Informações de Fale conosco',
       email: 'E-mail: comercial@biobras.ind.br',
       phone: 'Telefone: +55 44 9879-0538',
       address: 'Endereço: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
-      copyright: '© 2024 BioBras. Todos os direitos reservados.',
+      copyright: '© 2024 Biobras. Todos os direitos reservados.',
     },
     sobre: {
       historia: { label: 'Nossa História' },
-      certificacao: { titulo: 'Nossa Certificação', texto: 'Conteúdo sobre certificações da Biobras.' },
+      certificacao: { 
+        titulo: 'Nossa Certificação', 
+        texto: `Nossa certificação é a <b>ISCC EU</b>.<br/><br/>
+<img src="/images/ISCC-blue-logo.png" alt="ISCC EU Logo" style="max-width:180px;display:block;margin:24px auto 16px auto;"/>
+<h3>O que é o Certificado ISCC EU?</h3>
+O ISCC EU (International Sustainability and Carbon Certification – European Union) é um sistema de certificação reconhecido pela União Europeia, voltado para garantir que biomassa e biocombustíveis utilizados no território europeu atendam aos critérios de sustentabilidade ambiental, social e de redução de emissões de gases de efeito estufa, conforme as exigências da Diretiva Europeia de Energias Renováveis (RED II).<br/><br/>
+<b>Objetivos do ISCC EU</b><ul style="margin-top:8px;margin-bottom:8px;"><li>Garantir a rastreabilidade completa dos produtos desde a origem (fazenda, indústria) até o destino final.</li><li>Comprovar a sustentabilidade das matérias-primas utilizadas na produção de biocombustíveis e bioenergia.</li><li>Assegurar a redução de emissões de gases de efeito estufa em relação aos combustíveis fósseis.</li><li>Proteger o meio ambiente, evitando o uso de áreas de alto valor de biodiversidade ou com grandes estoques de carbono.</li></ul><br/>
+O selo ISCC EU reforça nosso compromisso com a sustentabilidade, a transparência e a responsabilidade ambiental em toda a cadeia produtiva.` 
+      },
       sustentabilidade: { titulo: 'Sustentabilidade', texto: 'Conteúdo sobre sustentabilidade da Biobras.' },
       ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
     },
     negocios: {
-      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da Biobras, destacando os segmentos atendidos e soluções inovadoras.' },
       biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
-      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
+      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela Biobras, com foco em sustentabilidade e eficiência.' }
     },
     fornecedor: {
       vegetal: {
         label: 'Vegetal',
         titulo: 'Produtos de Origem Vegetal',
         subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
-        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
+        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da Biobras.',
         lista1: 'Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
         lista2: 'Palma: Fonte renovável para processos industriais.',
         vantagensTitulo: 'Vantagens',
@@ -162,7 +168,7 @@ export const translations = {
       bannerTitle: 'TRABALHE CONOSCO',
       bannerSubtitle: 'O futuro da tecnologia começa aqui, com você!',
       bannerButton: 'Cadastre seu currículo',
-      title: 'Vagas em BioBras',
+      title: 'Vagas em Biobras',
       subtitle: 'Mostrando 1 - {count} de {count} vagas encontradas',
       salary: 'Salário a combinar',
       pcd: 'Elegível PCD',
@@ -173,8 +179,8 @@ export const translations = {
   },
   en: {
     home: {
-      title: 'BioBras',
-      subtitle: 'Transforming the future through sustainable biotechnology',
+      title: 'Biobras',
+      subtitle: 'Especialistas em sebo bovino e, em breve, biodiesel sustentável para o futuro da energia',
       ctaButton: 'Discover Our Solutions',
     },
     header: {
@@ -184,7 +190,7 @@ export const translations = {
       contact: 'Contact',
       careers: 'Work with us',
       aboutDropdown: {
-        title: 'About BioBras',
+        title: 'About Biobras',
         historia: 'Our History',
         certificacao: 'Our Certification',
         sustentabilidade: 'Sustainability',
@@ -217,18 +223,18 @@ export const translations = {
       },
     },
     about: {
-      title: 'About BioBras',
-      mainText: `At BioBras, we believe the <span class="highlight-green">future</span> is cultivated today. <br />
-      We are pioneers in biotechnology, <br />
-      transforming natural resources into <span class="highlight-green">sustainable</span> solutions that drive industry and preserve the <span class="highlight-green">environment.</span>`,
-      description: 'From the field to innovation, our passion is to generate renewable energy that fuels progress and builds a greener tomorrow for all.',
-      shortMainText: 'At BioBras, we cultivate the <span class="highlight-green">future</span> with <span class="highlight-green">sustainable</span> biotechnology solutions for a better <span class="highlight-green">environment</span>.',
-      shortDescription: 'Renewable energy, innovation, and commitment to a greener tomorrow.',
+      title: 'About Biobras',
+      mainText: `Since 2021, Biobras has been active in the bovine sebo segment, offering high-quality raw material to various industrial sectors.<br />
+With a solid structure and focus on efficiency, we are expanding our operations with responsibility and transparency.<br />
+Our next step is the production of biodiesel, aligning industrial growth with solutions focused on energy and sustainability.`,
+      description: 'Since 2021, Biobras offers high-quality raw material to the industry, with responsibility and focus on sustainability. Soon, we will start producing biodiesel.',
+      shortMainText: 'Since 2021, Biobras offers high-quality raw material to various industrial sectors and, soon, biodiesel as well.',
+      shortDescription: 'Biodiesel, inovação, responsabilidade e energia sustentável.',
       ctaButton: 'Discover our products',
     },
     services: {
       title: 'Our Businesses',
-      subtitle: 'Innovative Solutions',
+      subtitle: 'Biodiesel, innovation and sustainable solutions for the industry',
       items: [
         {
           title: 'Exportação',
@@ -265,7 +271,7 @@ export const translations = {
     },
     careers: {
       title: 'Trabalhe conosco',
-      subtitle: 'Join Our Team',
+      subtitle: 'Venha construir o futuro do biodiesel e da energia limpa',
       description: 'Be part of a company that is transforming the future through sustainable biotechnology.',
       ctaButton: 'View Jobs',
       benefits: [
@@ -276,13 +282,13 @@ export const translations = {
       ],
     },
     footer: {
-      aboutText: 'BioBras: Pioneers in sustainable biotechnology, transforming natural resources into innovative solutions.',
+      aboutText: 'Biobras: Pioneers in sustainable biotechnology, transforming natural resources into innovative solutions.',
       quickLinks: 'Quick Links',
       contactInfo: 'Contact Information',
       email: 'E-mail: comercial@biobras.ind.br',
       phone: 'Phone: +55 44 9879-0538',
       address: 'Address: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
-      copyright: '© 2024 BioBras. All rights reserved.',
+      copyright: '© 2024 Biobras. All rights reserved.',
     },
     sobre: {
       historia: { label: 'Our History' },
@@ -291,16 +297,16 @@ export const translations = {
       ondeEstamos: { titulo: 'Where We Are', texto: 'Content about Biobras location.' }
     },
     negocios: {
-      areaAtuacao: { titulo: 'Business Area', texto: 'Content about BioBras business areas, highlighting served segments and innovative solutions.' },
+      areaAtuacao: { titulo: 'Business Area', texto: 'Content about Biobras business areas, highlighting served segments and innovative solutions.' },
       biodiesel: { titulo: 'Biodiesel', texto: 'Content about the production, development and importance of biodiesel in sustainability and clean energy.' },
-      higieneLimpeza: { titulo: 'Hygiene and Cleaning', texto: 'Content about hygiene and cleaning solutions offered by BioBras, focusing on sustainability and efficiency.' }
+      higieneLimpeza: { titulo: 'Hygiene and Cleaning', texto: 'Content about hygiene and cleaning solutions offered by Biobras, focusing on sustainability and efficiency.' }
     },
     fornecedor: {
       vegetal: {
         label: 'Vegetal',
         titulo: 'Vegetal Origin Products',
         subtitulo: 'Sustainable raw materials for a greener future',
-        texto: 'Vegetal origin products are fundamental for BioBras sustainable and high-quality production.',
+        texto: 'Vegetal origin products are fundamental for Biobras sustainable and high-quality production.',
         lista1: 'Soy fatty acid: Essential for biodiesel and other derivatives.',
         lista2: 'Palm: Renewable source for industrial processes.',
         vantagensTitulo: 'Advantages',
@@ -334,7 +340,7 @@ export const translations = {
       bannerTitle: 'WORK WITH US',
       bannerSubtitle: 'The future of technology starts here, with you!',
       bannerButton: 'Submit your resume',
-      title: 'Jobs at BioBras',
+      title: 'Jobs at Biobras',
       subtitle: 'Showing 1 - {count} of {count} jobs found',
       salary: 'Salary to be defined',
       pcd: 'PCD Eligible',
@@ -345,8 +351,8 @@ export const translations = {
   },
   es: {
     home: {
-      title: 'BioBras',
-      subtitle: 'Transformando el futuro a través de la biotecnología sostenible',
+      title: 'Biobras',
+      subtitle: 'Especialistas em sebo bovino e, em breve, biodiesel sustentável para o futuro da energia',
       ctaButton: 'Descubre Nuestras Soluciones',
     },
     header: {
@@ -389,18 +395,18 @@ export const translations = {
       },
     },
     about: {
-      title: 'Sobre BioBras',
-      mainText: `En BioBras, creemos que el <span class="highlight-green">futuro</span> se cultiva hoy. <br />
-      Somos pioneros en biotecnología, <br />
-      transformando recursos naturales en soluciones <span class="highlight-green">sostenibles</span> que impulsan la industria y preservan el <span class="highlight-green">medio ambiente.</span>`,
-      description: 'Del campo a la innovación, nuestra pasión es generar energía renovable que impulsa el progreso y construye un mañana más verde para todos.',
-      shortMainText: 'En BioBras, cultivamos el <span class="highlight-green">futuro</span> con soluciones <span class="highlight-green">sostenibles</span> en biotecnología para un <span class="highlight-green">medio ambiente</span> mejor.',
-      shortDescription: 'Energía renovable, innovación y compromiso con un mañana más verde.',
+      title: 'Sobre Biobras',
+      mainText: `Desde 2021, a Biobras atua no segmento de sebo bovino, oferecendo matéria-prima de qualidade para diversos setores industriais.<br />
+Com uma estrutura sólida e foco em eficiência, seguimos expandindo nossas operações com responsabilidade e transparência.<br />
+Nosso próximo passo é a produção de biodiesel, alinhando crescimento industrial com soluções voltadas à energia e sustentabilidade.`,
+      description: 'Desde 2021, a Biobras oferece matéria-prima de qualidade para a indústria, com responsabilidade e foco em sustentabilidade. Em breve, iniciaremos a produção de biodiesel.',
+      shortMainText: 'Desde 2021, a Biobras oferece matéria-prima de qualidade para diversos setores industriais e, em breve, também biodiesel.',
+      shortDescription: 'Biodiesel, inovação, responsabilidade e energia sustentável.',
       ctaButton: 'Descubre nuestros productos',
     },
     services: {
       title: 'Nuestros Negocios',
-      subtitle: 'Soluciones Innovadoras',
+      subtitle: 'Biodiesel, inovação e soluções sustentáveis para a indústria',
       items: [
         {
           title: 'Exportação',
@@ -437,7 +443,7 @@ export const translations = {
     },
     careers: {
       title: 'Trabalhe conosco',
-      subtitle: 'Únase a Nuestro Equipo',
+      subtitle: 'Venha construir o futuro do biodiesel e da energia limpa',
       description: 'Sea parte de una empresa que está transformando el futuro a través de la biotecnología sostenible.',
       ctaButton: 'Ver Vacantes',
       benefits: [
@@ -448,13 +454,13 @@ export const translations = {
       ],
     },
     footer: {
-      aboutText: 'BioBras: Pioneros en biotecnología sostenible, transformando recursos naturales en soluciones innovadoras.',
+      aboutText: 'Biobras: Pioneros en biotecnología sostenible, transformando recursos naturales en soluciones innovadoras.',
       quickLinks: 'Enlaces Rápidos',
       contactInfo: 'Información de Contacto',
       email: 'Correo: comercial@biobras.ind.br',
       phone: 'Teléfono: +55 44 9879-0538',
       address: 'Dirección: Estr. da Farinheira - Nova Esperança, PR, 87600-000',
-      copyright: '© 2024 BioBras. Todos los derechos reservados.',
+      copyright: '© 2024 Biobras. Todos los derechos reservados.',
     },
     sobre: {
       historia: { label: 'Nossa História' },
@@ -463,16 +469,16 @@ export const translations = {
       ondeEstamos: { titulo: 'Onde Estamos', texto: 'Conteúdo sobre localização da Biobras.' }
     },
     negocios: {
-      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da BioBras, destacando os segmentos atendidos e soluções inovadoras.' },
+      areaAtuacao: { titulo: 'Exportação', texto: 'Conteúdo sobre as áreas de atuação da Biobras, destacando os segmentos atendidos e soluções inovadoras.' },
       biodiesel: { titulo: 'Biodiesel', texto: 'Conteúdo sobre a produção, desenvolvimento e importância do biodiesel na sustentabilidade e energia limpa.' },
-      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela BioBras, com foco em sustentabilidade e eficiência.' }
+      higieneLimpeza: { titulo: 'Higiene e Limpeza', texto: 'Conteúdo sobre as soluções de higiene e limpeza oferecidas pela Biobras, com foco em sustentabilidade e eficiência.' }
     },
     fornecedor: {
       vegetal: {
         label: 'Vegetal',
         titulo: 'Produtos de Origem Vegetal',
         subtitulo: 'Matérias-primas sustentáveis para um futuro mais verde',
-        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da BioBras.',
+        texto: 'Os produtos de origem vegetal são fundamentais para a produção sustentável e de alta qualidade da Biobras.',
         lista1: 'Ácido graxo de soja: Essencial para biodiesel e outros derivados.',
         lista2: 'Palma: Fonte renovável para processos industriais.',
         vantagensTitulo: 'Vantagens',
@@ -506,7 +512,7 @@ export const translations = {
       bannerTitle: 'TRABALHE CONOSCO',
       bannerSubtitle: 'O futuro da tecnologia começa aqui, com você!',
       bannerButton: 'Cadastre seu currículo',
-      title: 'Vagas em BioBras',
+      title: 'Vagas em Biobras',
       subtitle: 'Mostrando 1 - {count} de {count} vagas encontradas',
       salary: 'Salário a combinar',
       pcd: 'Elegível PCD',
